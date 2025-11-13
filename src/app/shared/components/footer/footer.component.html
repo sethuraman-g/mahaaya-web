@@ -1,0 +1,261 @@
+<section class="bg-highlight-primary pb-4 pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-12">
+        <div class="d-flex flex-column mb-5">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/assets/icon/mahayaa-logo-2.svg"
+              alt=""
+              class="align-text-middle img-fluid"
+            />
+            <div class="mx-auto pt-3">
+              <img src="/assets/icon/iso-logo.svg" alt="" />
+            </div>
+          </a>
+          <div class="my-4">
+            <p class="fw-rb fs-sm theme-sub-primary mb-0">
+              Address: 2512 Chambers Rd, Suite 105, Tustin, CA 92780, USA
+            </p>
+            <div class="fw-rb fs-sm theme-sub-primary">
+              Phone:<a
+                href="tel:+1-9495291773"
+                class="fw-rb fs-sm theme-sub-primary"
+                >+1-9495291773</a
+              >
+            </div>
+            <div class="fw-rb fs-sm theme-sub-primary">
+              Email:
+              <a
+                href="mailto:info@mahaaya.com"
+                class="fw-rb fs-sm theme-sub-primary"
+                >info&#64;mahaaya.com</a
+              >
+            </div>
+          </div>
+          <div class="social-media d-flex">
+            <a
+              href="https://www.linkedin.com/company/mahaaya/"
+              target="_blank"
+              class="contact-social text-center"
+            >
+              <img
+                src="/assets/icon/social-media/linked.svg"
+                alt=""
+                class="img img-fluid"
+            /></a>
+
+            <a
+              href="https://twitter.com/MahaayaLLC"
+              class="contact-social text-center ms-3"
+              target="_blank"
+            >
+              <img
+                src="/assets/icon/social-media/twitterX.svg"
+                alt=""
+                class="img img-fluid"
+            /></a>
+
+            <a
+              href="https://www.youtube.com/channel/UCvM0HBLNuICi4fybNsSuYoA"
+              class="contact-social text-center ms-3"
+              target="_blank"
+            >
+              <img
+                src="/assets/icon/social-media/youtube origin.svg"
+                alt=""
+                class="img img-fluid"
+            /></a>
+
+            <a
+              href="https://www.instagram.com/mahaaya18/"
+              class="contact-social text-center ms-3 p-0"
+              target="_blank"
+            >
+              <img
+                src="/assets/icon/social-media/instagram.svg"
+                alt=""
+                class="img img-fluid"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9 col-sm-12 my-auto">
+        <div class="row">
+          <div class="col-lg-4 col-ms-12">
+            <h5 class="ff-primary fs-md fw-semibold theme-secondary">
+              Services
+            </h5>
+            <h6
+              class="ff-primary theme-secondary fs-d text-decoration-underline"
+            >
+              Cloud Advisory Services
+            </h6>
+            <div class="">
+              <a
+                (click)="navigateToElement('da-strategy')"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2 d-flex"
+                >Data and Architecture Strategy</a
+              >
+              <a
+                (click)="navigateToElement('dt-strategy')"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2 d-flex"
+                >Digital Transformation Strategy</a
+              >
+              <a
+                (click)="navigateToElement('ca-strategy')"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2 d-flex"
+                >Cloud Optimization Strategy</a
+              >
+            </div>
+            <div class="py-3 mt-2">
+              <h6
+                class="ff-primary theme-secondary fs-d text-decoration-underline"
+              >
+                Technology Consulting
+              </h6>
+              <div class="d-flex flex-column">
+                <a
+                  (click)="navigateToElement('c-modernize')"
+                  class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                  >Cloud Modernization</a
+                >
+                <a
+                  (click)="navigateToElement('data-vishual')"
+                  class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                  >Data Engineering & Visualization</a
+                >
+                <a
+                  (click)="navigateToElement('analytic-modern')"
+                  class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                  >Analytics Modernization</a
+                >
+                <a
+                  (click)="navigateToElement('data-governance')"
+                  class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                  >Data Governance
+                </a>
+                <a
+                  [routerLink]="'/solutionmarketplace/aiSolutions'"
+                  class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                  >AI & Cognitive Services</a
+                >
+                <!-- (click)="navigateToElement('ai-cognitive')" -->
+                <a
+                  (click)="navigateToElement('secure-compile')"
+                  class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                  >Security and Compliance</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h5
+              class="ff-primary fs-md fw-semibold theme-secondary"
+              [routerLink]="'/solutionmarket'"
+            >
+              Solution Marketplace
+            </h5>
+            <div class="d-flex flex-column">
+              <a
+                [routerLink]="'/solutionmarketplace/analytics'"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-1"
+                >Analytics Modernization</a
+              >
+              <a
+                [routerLink]="'/solutionmarketplace/dataplatform'"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                >Data and Platform Migration</a
+              >
+
+              <a
+                [routerLink]="'/solutionmarketplace/microfab'"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                >Microsoft Fabric</a
+              >
+              <a
+                [routerLink]="'/solutionmarketplace/securitygovernance'"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                >Security and Governance</a
+              >
+              <a
+                [routerLink]="'/solutionmarketplace/application'"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                >Application Modernization</a
+              >
+              <a
+                [routerLink]="'/solutionmarketplace/databricks'"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                >Databricks</a
+              >
+              <a
+                [routerLink]="'/solutionmarketplace/salesforce'"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                >Salesforce</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <h5 class="ff-primary fs-md fw-semibold theme-secondary">
+              Resources
+            </h5>
+            <div class="d-flex flex-column">
+              <a
+                [routerLink]="'/customer'"
+                class="ff-primary color-grey fs-xsm text-decoration-none"
+                >Customers</a
+              >
+              <!-- <a
+                href="#"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                >Social Media</a> -->
+
+              <a
+                [routerLink]="'/event'"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                >Events</a
+              >
+
+              <a
+                [routerLink]="'/blogs'"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                >Blogs</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <h5 class="ff-primary fs-md fw-semibold theme-secondary">
+              Company
+            </h5>
+            <div class="d-flex flex-column">
+              <a
+                [routerLink]="'/about-us'"
+                class="ff-primary color-grey fs-xsm text-decoration-none"
+                >About Us</a
+              >
+              <a
+                (click)="navigateToAboutUs('team')"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                >Our Leadership</a
+              >
+              <a
+                [routerLink]="'/ourlocation'"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                >Our Locations</a
+              >
+              <a
+                [routerLink]="'/contact-us'"
+                class="ff-primary color-grey fs-xsm text-decoration-none mt-2"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <span class="fw-rb fs-xsm theme-sub-primary d-flex justify-content-center"
+      >Copyright © 2023 Mahaaya. All rights reserved</span
+    >
+  </div>
+</section>

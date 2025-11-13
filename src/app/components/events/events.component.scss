@@ -1,0 +1,158 @@
+.customer-banner {
+  background-image: url('/assets/image/img/about/eventist/Events Banner.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(81vh - 100px);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.customer-content {
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.eventist {
+  background-color: #F6FCFF !important;
+  border: 1px solid #E4E4E4;
+}
+
+.eventer-detail {
+  background-color: #1589FF24;
+
+}
+
+
+a {
+  background: linear-gradient(260.76deg, #0FA6FC -16.51%, #D048FC 94.48%);
+  // padding: 14px 46px !important;
+}
+
+// ul li::before {
+//   content: url(/assets/image/img/about/eventist/tickimg.svg);
+// }
+
+// .inside{
+//     margin-left: -5rem;
+// }
+
+@media (max-width: 992.98px) {
+  .inside {
+    margin-left: auto !important;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .eventer-detail {
+    width: 90%;
+  }
+
+  .linkedin {
+    padding: 12px 33px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .linkedin {
+    padding: 13px 34px !important;
+    width: 100%;
+    display: flex;
+  }
+
+  .eventer-img {
+    width: 100%;
+  }
+}
+
+.upcoming {
+  background-color: #F6FCFF !important;
+}
+
+.techtalk {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 99%;
+}
+
+.host {
+  background: linear-gradient(223.2deg, #0FA6FC -36.92%, #D048FC 78.37%);
+  color: #ffff;
+  border-radius: 41.96px;
+  border: 0;
+}
+
+.event-poster {
+  background-color: #e1f2fa !important;
+}
+
+.upcoming-card {
+  box-shadow: 0px 4px 20px 0px #0000001A;
+  border-radius: 25px;
+}
+
+.event-AI {
+  max-height: 40rem;
+  box-shadow: 0px 0px 50px -27px black;
+}
+
+.btn-event {
+  background: #EAF0F5;
+  color: #4B5356;
+  border-radius: 8px;
+  border: none !important;
+}
+
+.btn-event.active {
+  background: #1589FF !important;
+  color: #FFFFFF !important;
+}
+
+.event-1 {
+  box-shadow: 0px 3px 32px -3px rgba(0, 41, 88, 0.1098039216);
+  background: #FFFFFF;
+  border-radius: 14px;
+  border: 0 !important;
+}
+
+.host-ico {
+  left: 2rem;
+  z-index: 3;
+  top: -2px;
+  height: 38px;
+}
+
+.read-btn {
+  width: 40%;
+  border-radius: 55px;
+  box-shadow: 0px 6px 16px 0px #002A3833;
+  color: #ffffff;
+  background: linear-gradient(90.76deg, #0FA6FC -16.51%, #D048FC 94.48%);
+  // color: #1589FF;
+  // border: 1px solid #1589FF;
+  // background: #ffffff;
+  // padding: 12px 32px 12px 32px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .linkedin {
+    padding-right: 3px !important;
+    padding-left: 3px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .eventer-detail {
+    width: 42%;
+  }
+}
+
+@media(min-width:1900px) {
+  .event-AI {
+    max-height: 50rem;
+  }
+}

@@ -1,0 +1,79 @@
+.service-banner{
+    background-image: url(/assets/image/img/our-service/Services.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(81vh - 100px);
+    width: 100%;
+}
+
+.service-content{
+    position: absolute;
+    top: 42%;
+    left: 25%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.accordion-button::after{
+  rotate: 270deg !important;
+  background-image: url(/assets/icon/global-icon/arrow-down.svg) !important;
+}
+
+.accordion-button {
+    padding: 12px !important; /* Keep padding but avoid setting width */
+    border-radius: 50% !important;
+    width: 40px; /* Set a fixed width */
+  height: 40px;
+    position: relative;
+    right: 76px;
+    bottom: 37px;
+    background-color: #E0F1FF !important;
+    transition: background-color 0.3s ease-in-out;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+ .service-img:hover img {
+    transform: translateY(-59%) !important;
+}
+.slow-img {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .slow-img img{
+    transition: all 0.3s ease-in-out;
+  }
+
+  @media (max-width: 991.98px) { 
+   
+    .accobutton{
+    padding: 12px !important;
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    right: 76px;
+    bottom: 37px;
+    background-color: #E0F1FF !important;
+    transition: background-color 0.3s ease-in-out;
+    left: 0 !important;
+    bottom: 0 !important;
+      }
+
+    .accobutton::after{
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.2s ease-in-out;
+    rotate: 92deg !important;
+      }
+   
+    }
+
+    

@@ -1,0 +1,226 @@
+<section class="py-5 main-analytics overflow-hidden">
+    <div class="mt-4 pt-5">
+    <div class="container">
+            <div class="card rounded-4 mt-5 position-relative analytics-card" data-aos="zoom-in" data-aos-duration="2500">
+                <div class="analytic-content position-absolute">
+                    <h6 class="fw-bb fs-1xl theme-secondary pov">Analytics Modernization Proof <br>of Value (POV)</h6>
+                </div>
+                <img src="/assets/image/img/global-img/analytics.png" alt="" class="rounded-4 img-fluid ">
+               </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-analytics overflow-hidden">
+    <div class="container">
+        <div class="text-center" data-aos="fade-down" data-aos-duration="3000">
+            <img src="/assets/image/img/global-img/povimg.png" alt="" class="w-100 h-100">
+        </div>
+    </div>
+</section>
+
+<section class="py-5 overflow-hidden">
+    <div class="container" data-aos="fade-down" data-aos-duration="3000">
+        <h6 class="text-center fw-bb fs-1xl head-theme analytics-paras py-4">Reference Architecture (Data Value Chain)</h6>
+        <div class="text-center">
+            <img src="/assets/image/img/global-img/povreferimage.png" alt="" class="img-fluid radimg" id="application">
+        </div>
+        <div class="text-end me-4 mt-4">
+            <button class="btn-theme-primary fw-rb fs-d dvc-btn position-relative" data-bs-toggle="modal" data-bs-target="#staticBackdrop" ><img src="/assets/icon/download-icon.svg" alt="" class="me-2" >Download PDF</button>
+        </div>
+    </div>
+</section>
+
+<section class="main-analytics py-5 mb-5">
+  <div class="container">
+    <div class="bg-radius pb-4">
+      <div class="main-marketplace position-relative">
+        <div class="flex-wrap row row-cols-lg-5 row-cols-md-2 row-cols-1 gy-2">
+          <div class="col">
+            <div class="card border-0 marketplace-card rounded-4 py-2 card-links h-100" [routerLink]="'/solutionmarketplace/dataplatform'"
+            data-aos="fade-down-right" data-aos-duration="2000">
+              <div class="card-header bg-transparent border-0">
+                <img src="/assets/icon/solutionmarket/platformwhiteicon.svg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text fw-bb fs-d">Data and Platform Migration POV</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card border-0 marketplace-card rounded-4 py-2 card-links h-100" [routerLink]="'/solutionmarketplace/aiSolutions'"
+            data-aos="fade-down-right" data-aos-duration="2000">
+              <div class="card-header bg-transparent border-0">
+                <img src="/assets/icon/solutionmarket/aiSolution.svg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text fw-bb fs-d">AI Solutions</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border-0 marketplace-card rounded-4 py-2 card-links h-100" [routerLink]="'/solutionmarketplace/microfab'"
+            data-aos="fade-down-right" data-aos-duration="1500">
+              <div class="card-header bg-transparent border-0">
+                <img src="/assets/icon/solutionmarket/fabricwhiteicon.svg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text fw-bb fs-d">Microsoft Fabrics POV</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border-0 marketplace-card rounded-4 py-2 card-links h-100" [routerLink]="'/solutionmarketplace/securitygovernance'"
+            data-aos="fade-down-right" data-aos-duration="1000">
+              <div class="card-header bg-transparent border-0">
+                <img src="/assets/icon/solutionmarket/securitywhiteicon.svg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text fw-bb fs-d">Security and Governance POV</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border-0 marketplace-card rounded-4 py-2 card-links h-100" [routerLink]="'//solutionmarketplace/application'"
+            data-aos="fade-down-right" data-aos-duration="500">
+              <div class="card-header bg-transparent border-0">
+                  <img src="/assets/icon/solutionmarket/appwhiteicon.svg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text fw-bb fs-d">Application Modernization POV</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---------------MODAL---------------------------->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-5">
+      <div class="modal-header border-0 rounded-top-5">
+        <div class="mx-auto">
+          <h5 class="modal-title text-center" id="staticBackdropLabel"><span><img
+                src="/assets/icon/global-icon/home-logo.svg" alt="" class="mb-2 home-logo"></span> Welcomes you</h5>
+        </div>
+        <button type="button" class="btn-close m-0 p-0" data-bs-dismiss="modal" aria-label="Close" (click)="clearForm()"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="downloadForm" (ngSubmit)="onSubmit(downloadForm.value)">
+          <div class="mb-3">
+            <label for="FirstName" class="form-label fs-md fw-mb">Name</label>
+            <div class="input-group">
+              <input type="text" class="form-control" [ngClass]="{
+                            'is-invalid':
+                              submitted && downloadForm.get('first_name')?.errors
+                          }" formControlName="first_name" id="first_name" placeholder="Name" aria-label="first_name"
+                aria-describedby="first_name" />
+
+              <div class="invalid-feedback" *ngIf="
+                            downloadForm.get('first_name')?.errors &&
+                            (downloadForm.get('first_name')?.dirty ||
+                              downloadForm.get('first_name')?.touched ||
+                              downloadForm.get('first_name')?.untouched) &&
+                            submitted
+                          ">
+                <p class="mb-0" *ngIf="submitted && downloadForm.get('first_name')?.errors?.['required']">
+                  This field is required
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <label for="FirstName" class="form-label fs-md fw-mb">Email</label>
+          <div class="input-group">
+            <input type="email" class="form-control" [ngClass]="{
+    'is-invalid': submitted && downloadForm.get('email')?.errors
+  }" formControlName="email" id="emailAddress" placeholder="email" aria-label="emailAddress"
+              aria-describedby="emailAddress" />
+
+            <div class="invalid-feedback" *ngIf="
+    downloadForm.get('email')?.errors &&
+    (downloadForm.get('email')?.dirty ||
+      downloadForm.get('email')?.touched ||
+      downloadForm.get('email')?.untouched) &&
+    submitted
+  ">
+              <p class="mb-0" *ngIf="downloadForm.get('email')?.errors?.['required']">
+                This field is required
+              </p>
+              <p class="mb-0" *ngIf="downloadForm.get('email')?.errors?.['pattern']">
+                Enter valid email
+              </p>
+            </div>
+          </div>
+
+          <label for="FirstName" class="form-label fs-md fw-mb mt-2">Company</label>
+          <div class="input-group">
+            <input type="text" class="form-control" [ngClass]="{
+                'is-invalid':
+                  submitted && downloadForm.get('company_name')?.errors
+              }" formControlName="company_name" id="company_name" placeholder="Company" aria-label="Job Title"
+              aria-describedby="Job Title" />
+            <div class="invalid-feedback" *ngIf="
+                downloadForm.get('company_name')?.errors &&
+                (downloadForm.get('company_name')?.dirty ||
+                  downloadForm.get('company_name')?.touched ||
+                  downloadForm.get('company_name')?.untouched) &&
+                submitted
+              ">
+              <p class="mb-0" *ngIf="downloadForm.get('company_name')?.errors?.['required']">
+                This field is required
+              </p>
+            </div>
+          </div>
+
+          <label for="FirstName" class="form-label fs-md fw-mb mt-2">Comments</label>
+          <div class="input-group mb-3">
+            <textarea class="form-control" [ngClass]="{
+                            'is-invalid':
+                              submitted && downloadForm.get('comments')?.errors
+                          }" id="comments" formControlName="comments" placeholder="comments" style="resize: none"
+              aria-label="comments" draggable="false" maxLength="500"></textarea>
+            <div class="invalid-feedback" *ngIf="
+                            downloadForm.get('comments')?.errors &&
+                            (downloadForm.get('comments')?.dirty ||
+                              downloadForm.get('comments')?.touched ||
+                              downloadForm.get('comments')?.untouched) &&
+                            submitted
+                          ">
+              <p class="mb-0" *ngIf="downloadForm.get('comments')?.errors?.['required']">
+                This field is required
+              </p>
+              <p class="mb-0" *ngIf="downloadForm.get('comments')?.errors?.['maxLength']">
+                Max 500 Character must be allowed
+              </p>
+            </div>
+          </div>
+          <a [routerLink]="'/privacypolicy'" target="_blank"
+            class="fw-rb fs-d head-theme text-decoration-underline mx-auto">Privacy Policy</a>
+          <div class="modal-footer border-0 d-flex justify-content-start py-3 px-0">
+            <div class="submit-btn">
+              <button type="submit" class="btn-theme-primary skip-btn w-100" (click)="onSubmit(downloadForm.value);">Submit & Download</button>
+            </div>
+            <div class="ms-2 skipbtn">
+              <button type="button" class="skip-btns w-100" (click)="mo()" (click)="downloadImages()">
+                Skip & Download
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+

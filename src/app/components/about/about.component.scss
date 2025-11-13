@@ -1,0 +1,143 @@
+.about-banner {
+  background-image: url(/assets/image/img/about/Banner\ About\ us.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(81vh - 100px);
+  width: 100%;
+}
+
+.about-content {
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-contents {
+  top: 62%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.mission img {
+  z-index: 99;
+  position: relative;
+  padding: 11px 0px 9px 11px;
+  border-radius: 20px;
+}
+
+.culture-banner {
+  background-image: url(/assets/image/img/about/ourculturebanner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 3rem;
+}
+
+.our-corevalues {
+  box-shadow: 0px 0px 49.355934143066406px 0px #0029580F;
+  transition: all 3s ease-in;
+}
+
+.our-corevalues:hover {
+  background: linear-gradient(0deg, #1589FF -102.93%, #FFFFFF 155.85%);
+  transition: all 3s ease-in;
+}
+
+.our-corevalueses {
+  box-shadow: 0px 0px 49.355934143066406px 0px #0029580F;
+  transition: all 3s ease-in;
+  // background: linear-gradient(0deg, #1589FF -227.93%, #FFFFFF 125.85%);
+  background: linear-gradient(0deg, #1589FF -151.93%, #FFFFFF 93.85%);
+}
+
+.our-corevaluese .card {
+  transition: all 3s ease-in;
+}
+
+.our-corevaluese {
+  box-shadow: 0px 0px 49.355934143066406px 0px #0029580F;
+  transition: all 3s ease-in;
+}
+
+.alliance-banner {
+  background-image: url(/assets/image/img/partners-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+
+.our-service-card {
+  border: 1.5px solid #e6e9ec;
+  box-shadow: 0px 12px 10px rgba(0, 42, 56, 0.05);
+  border-radius: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.our-service-card-blue {
+  background: linear-gradient(0deg, #1589FF -76.93%, #FFFFFF 125.85%);
+  box-shadow: 0px 16px 28px rgba(0, 42, 56, 0.12);
+  border-radius: 24px;
+  transition: 0.3s ease-in-out;
+  // transform: scale(1.05);
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.databricks {
+  width: 40%;
+}
+
+@media (max-width: 520px) {
+  .databricks {
+    width: 55%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .our-corevalueses {
+    width: 100% !important;
+  }
+
+  .about-contents {
+    top: 60% !important;
+    width: 100% !important;
+  }
+
+  .about-content {
+    top: 46% !important;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .team-block .inner-box .social-icons {
+    position: absolute;
+    right: 101px;
+    top: 100px;
+    z-index: 1;
+  }
+
+  .our-corevaluese {
+    width: 100% !important;
+  }
+
+  .our-corevaluese .card-header {
+    padding: inherit !important;
+  }
+}

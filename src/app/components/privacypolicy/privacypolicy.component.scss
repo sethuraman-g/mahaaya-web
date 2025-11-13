@@ -1,0 +1,38 @@
+.main-privacy{
+    background-color: #D3E9FF;
+}
+.card-footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mainprivacycard{
+    background-color: #e8f3ff;
+}
+
+table{
+    border: 1px solid grey;
+}
+
+table td{
+    border: 1px solid grey;
+    padding: 6px;
+    font-size: 17px !important;
+}
+table th {
+    border: 1px solid grey;
+}
+
+table tr{
+    border: 1px solid grey;
+}
+
+a{
+    cursor: pointer !important;
+}
+.isoimg-fluid{
+    max-width: 6%;
+    height: auto;
+}

@@ -1,0 +1,30 @@
+.customer-page{
+    box-shadow: 0px 4px 15px 0px #0000000A;
+    background-color: #ffff;
+}
+
+.customer-bg{
+    background-color: #D3E9FF;
+}
+
+.customer-banner{
+    background-image: url(/assets/image/img/global-img/customerbanner.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(81vh - 100px);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.customer-content{
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (max-width: 575.98px) {
+    .customer-content{
+        text-align: center !important;
+    }
+}

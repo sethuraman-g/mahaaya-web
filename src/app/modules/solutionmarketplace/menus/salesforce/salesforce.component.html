@@ -1,0 +1,161 @@
+<section class="py-5 main-analytics overflow-hidden">
+  <div class="mt-4 pt-5">
+    <div class="container">
+      <div
+        class="card rounded-4 mt-5 position-relative analytics-card"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
+        <div class="analytic-content position-absolute">
+          <h6 class="fw-bb fs-1xl theme-secondary pov">
+            Salesforce Services <br />
+            at Mahaaya
+          </h6>
+          <p class="theme-secondary fs-d">
+            Simplifying Transformation. Amplifying Value.
+          </p>
+          <button
+            class="btn talk-to-btn ff-primary fs-d px-4 py-2 mt-2"
+            [routerLink]="'/contact-us'"
+          >
+            Talk to Us
+          </button>
+        </div>
+        <img
+          src="/assets/og-img/salesforce-banner.png"
+          alt=""
+          class="rounded-5 img-fluid salesforce-banner"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<div
+  class="container py-5 my-3 salesforce-performance-section"
+  data-aos="fade-down"
+  data-aos-duration="3000"
+>
+  <div>
+    <p class="fw-rb fs-md head-theme">
+      At Mahaaya, we help businesses harness the full power of Salesforce —
+      uniting data, systems, and people to drive meaningful growth. Our focus is
+      on creating connected, intelligent, and scalable Salesforce ecosystems
+      that deliver measurable business outcomes. As part of the Numentica Group,
+      we combine the scale and capability of a cloud transformation leader with
+      the agility of a boutique consultancy, ensuring every solution is both
+      strategic and adaptable. From strategy and implementation to data
+      activation and AI enablement, we make Salesforce work smarter for you —
+      simplifying transformation and amplifying value at every stage of your
+      digital journey.
+    </p>
+  </div>
+  <img
+    src="/assets/image/img/salesforce/salesforce-performance.png"
+    alt=""
+    class="img-fluid salesforce-performance-image"
+  />
+</div>
+
+<div class="py-5 salesforce-expertise-section">
+  <div class="container py-5" data-aos="zoom-in" data-aos-duration="3000">
+    <h2 class="fw-bb fs-xl pb-2">Our Salesforce Expertise</h2>
+    <div class="expertise-content">
+      <div data-aos="fade-down-right" data-aos-duration="1500">
+        <div
+          *ngFor="let item of salesforceExpertises; let i = index"
+          (click)="setActiveIndex(i)"
+          class="expertise-text fs-md pb-3"
+          [class.active-text]="activeIndex === i"
+        >
+          {{ item.title }}
+          <span *ngIf="activeIndex !== i" class="right-arrow">&#8594;</span>
+          <span *ngIf="activeIndex !== i" class="down-arrow">&#8595;</span>
+        </div>
+      </div>
+      <div
+        class="position-relative"
+        style="background-color: #bfdfff; border-radius: 25px"
+        data-aos="zoom-in"
+        data-aos-duration="3000"
+      >
+        <div class="expertise-selected-content">
+          <h5 class="fs-md fw-rb">
+            {{ salesforceExpertises[activeIndex].description }}
+          </h5>
+          <p
+            class="fs-d fw-mb pt-2 mb-0"
+            *ngIf="salesforceExpertises[activeIndex].content.title"
+          >
+            {{ salesforceExpertises[activeIndex].content.title }}
+          </p>
+          <ul class="list-disc list-inside">
+            <li
+              class="fs-d fw-rb"
+              *ngFor="
+                let point of salesforceExpertises[activeIndex].content.points
+              "
+            >
+              {{ point }}
+            </li>
+          </ul>
+          <p
+            *ngIf="salesforceExpertises[activeIndex].content.description"
+            class="fs-d fw-mb"
+          >
+            {{ salesforceExpertises[activeIndex].content.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="container py-5 my-3 why-salesforce"
+  data-aos="fade-down-right"
+  data-aos-duration="3000"
+>
+  <h3 class="text-center fw-bb fs-1xl head-theme">
+    Why Mahaaya for Salesforce
+  </h3>
+  <p class="text-center fw-rb fs-md">
+    At Mahaaya, we don’t just implement Salesforce — we craft intelligent
+    ecosystems<br class="break-tag" />
+    that connect strategy, technology, and people to deliver measurable business
+    <br class="break-tag" />
+    growth.
+  </p>
+
+  <div class="salesforce-services-card py-5">
+    <div
+      *ngFor="let service of salesforceServices"
+      class="rounded-4 service-card"
+    >
+      <img src="{{ service.icon }}" alt="" />
+      <h5 class="fw-mb fs-md head-theme mt-2">{{ service.title }}</h5>
+      <p class="fw-rb fs-d head-theme">{{ service.description }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="container" data-aos="zoom-in" data-aos-duration="2000">
+  <div class="connect-card mx-auto px-4 py-5 text-center">
+    <p class="ff-primary fw-light fs-lg theme-secondary mb-4">
+      Let’s Build What's Next
+    </p>
+    <h5 class="ff-primary fw-bold theme-secondary">
+      Partner with Mahaaya to scale your Salesforce ecosystem, elevate revenue
+      operations, <br class="break-tag" />and unlock the power of Agentforce and
+      Data Cloud. Together, we’ll create connected,
+      <br class="break-tag" />intelligent, and future-ready solutions that drive
+      lasting impact.
+    </h5>
+    <button
+      class="btn connect-btn ff-primary fs-d px-4 py-2 mt-2"
+      [routerLink]="'/contact-us'"
+    >
+      Lets Connect
+    </button>
+  </div>
+</div>

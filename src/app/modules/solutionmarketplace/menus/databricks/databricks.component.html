@@ -1,0 +1,176 @@
+<section class="py-5 main-analytics overflow-hidden">
+  <div class="mt-4 pt-5">
+    <div class="container">
+      <div
+        class="card rounded-4 mt-5 position-relative analytics-card"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
+        <div class="analytic-content position-absolute">
+          <h6 class="fw-bb fs-1xl theme-secondary pov">Databricks</h6>
+          <p class="theme-secondary fs-d">
+            Powering Intelligent Enterprises with Unified Data & <br class="break-tag"/>
+            AI Solutions
+          </p>
+        </div>
+        <img
+          src="/assets/og-img/databricks.png"
+          alt=""
+          class="rounded-4 img-fluid"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5 hero-content" data-aos="fade-down" data-aos-duration="1500">
+    <h1 class="fw-bb fs-1xl head-theme">
+      Unified Analytics and AI Solutions for the Modern Enterprise
+    </h1>
+    <p class="fw-rb fs-md head-theme">
+      As an official Databricks partner, Mahaaya delivers scalable, secure, and
+      future-ready data platforms that unlock the full potential of the
+      Lakehouse architecture.
+    </p>
+  </div>
+
+  <div
+    class="container d-flex justify-content-between why-databricks"
+    data-aos="fade-down"
+    data-aos-duration="1500"
+  >
+    <div>
+      <h2 class="fw-bb fs-1xl head-theme">
+        Why <img src="/assets/icon/mahayaa-logo.svg" alt="" class="mb-3" /> for
+        <img
+          src="assets/icon/solutionmarket/databricks-icons/bricks.png"
+          alt=""
+          class="mb-3"
+        />
+        databricks
+      </h2>
+      <div class="why-mahaaya-content">
+        <p
+          *ngFor="let dataItem of databricksContent"
+          class="fw-rb fs-md head-theme"
+        >
+          <img
+            src="/assets/icon/solutionmarket/databricks-icons/tick-icon.svg"
+            alt=""
+            class="mb-2"
+          />{{ dataItem }}
+        </p>
+      </div>
+    </div>
+    <img
+      src="/assets/image/img/marketplace/why-mahaaya.png"
+      alt=""
+      class="img-fluid"
+    />
+  </div>
+</section>
+
+<div class="container py-5 db-capabilities-section" data-aos="zoom-in" data-aos-duration="1500">
+  <h1 class="text-center fw-bb fs-1xl head-theme pb-5">
+    Our Databricks Capabilities
+  </h1>
+
+  <div class="card-grid">
+    <div *ngFor="let item of dbCapabilities" class="databrick-card rounded-4">
+      <img src="{{ item.icon }}" alt="" class="img-fluid"/>
+      <p class="head-theme fw-rb fs-lg text-center">{{ item.title }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="container py-5 db-solutions-section" data-aos="zoom-in" data-aos-duration="1500">
+  <h1 class="text-center fw-bb fs-1xl head-theme pb-5">Solution Offerings</h1>
+
+  <div class="solution-offerings">
+    <div
+      *ngFor="let solution of solutionOfferings"
+      class="rounded-4 solution-card"
+    >
+      <img src="{{ solution.icon }}" alt="" />
+      <p class="head-theme fw-bb fs-lg mt-2">{{ solution.title }}</p>
+      <p class="head-theme fw-rb fs-md">{{ solution.description }}</p>
+    </div>
+  </div>
+</div>
+
+<section class="my-5 databricks-usecase py-5">
+  <div data-aos="zoom-in" data-aos-duration="1500" class="container">
+    <h1 class="fw-bb fs-1xl theme-secondary text-center">Use Cases</h1>
+    <div class="usecases-container py-5">
+      <div *ngFor="let item of dbUsecases">
+        <div class="use-case-detail">
+          <img
+            src="/assets/icon/solutionmarket/databricks-icons/grey-tick-icon.svg"
+            alt=""
+          />
+          <div class="use-case-content">
+            <p class="fw-bb fs-lg theme-secondary mb-0">{{ item.title }}</p>
+            <p class="fw-rb fs-d" style="color: #e0e8f8">
+              {{ item.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container pt-5 delivery-approach-container" data-aos="fade-down" data-aos-duration="1500">
+  <h1 class="text-center fw-bb fs-1xl head-theme">
+    Delivery Approach & Engagement Methodology
+  </h1>
+  <p class="text-center fw-rb fs-lg head-theme pb-5">
+    At Mahaaya, we follow a structured, value-driven implementation approach
+    that <br class="break-tag"/>ensures fast time-to-value and alignment with business goals.
+  </p>
+
+  <div class="d-flex justify-content-center align-items-center">
+    <img src="/assets/image/img/marketplace/db-delivery-approach.png" alt="" class="img-fluid"/>
+  </div>
+</div>
+
+<div class="delivery-approach-section">
+  <div class="container py-5">
+    <owl-carousel-o [options]="carouselOptions">
+      <ng-container *ngFor="let content of deliveryApproachContents">
+        <ng-template carouselSlide>
+          <div class="rounded-5 delivery-approach-card">
+            <img
+              src="/assets/icon/solutionmarket/databricks-icons/t-icon.svg"
+              alt=""
+              class="t-hover-icon"
+            />
+            <img src="{{ content.icon }}" alt="" />
+            <p class="head-theme fw-bb fs-lg mb-0">{{ content.title }}</p>
+            <p class="head-theme fw-rb fs-d mb-0">{{ content.description }}</p>
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</div>
+
+<div class="container py-5 db-reference-section" data-aos="fade-down" data-aos-duration="1500">
+  <h1 class="text-center fw-bb fs-1xl head-theme">Reference Architecture</h1>
+</div>
+
+<div class="container" data-aos="zoom-in" data-aos-duration="1500">
+  <div class="connect-card mx-auto px-4 py-5 text-center">
+    <p class="ff-primary fw-light fs-lg theme-secondary mb-4">
+      Let’s Build the Future of Data Together
+    </p>
+    <h5 class="ff-primary fw-bold theme-secondary">
+      Connect with our Databricks team to explore how Mahaaya can accelerate <br class="break-tag"/> your data journey. We bring certified expertise, industry understanding, <br class="break-tag"/> and delivery excellence across cloud platforms
+    </h5>
+    <button
+      class="btn connect-btn ff-primary fs-d px-4 py-2 mt-2"
+      [routerLink]="'/contact-us'"
+    >
+      Lets Connect
+    </button>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+.customer-banner {
+  background-image: url('/assets/image/img/about/eventist/blogs-banner.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(81vh - 100px);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.customer-content {
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+// .lift-left {
+//   border-left: 4px solid #ccd1d6;
+//   color: #847373;
+// }
+
+.content-color {
+  color: #000000 !important;
+}

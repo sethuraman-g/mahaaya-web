@@ -1,0 +1,362 @@
+.why-databricks {
+  gap: 20px;
+}
+
+.why-mahaaya-content {
+  margin-top: 20px;
+  margin-left: 50px;
+
+  img {
+    margin-right: 9px;
+  }
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.databrick-card {
+  width: 256px;
+  height: 165px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: linear-gradient(79.03deg, #0FA6FC 6.57%, #7C30FF 76.4%, #D048FC 115.95%);
+    transform: translateY(-5px);
+    cursor: pointer;
+
+    p {
+      color: #fff !important;
+    }
+
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+
+.solution-offerings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  .solution-card {
+    padding: 20px;
+
+    &:hover {
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(2.47deg, #72B7FE -55.54%, #DFEFFF 78.76%);
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+  }
+}
+
+.databricks-usecase {
+  background-image: url("/assets/image/img/marketplace/db-usecase.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+
+  .usecases-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .use-case-detail {
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+  }
+}
+
+.delivery-approach-section {
+  border-top: 3px solid #bed2fa;
+  overflow: hidden;
+
+  .delivery-approach-card {
+    border: 0.5px solid #e0e0e0;
+    transition: all 0.3s ease-in-out;
+    padding: 20px;
+    height: 234px;
+    position: relative;
+    z-index: 1;
+
+    .t-hover-icon {
+      display: none;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    &:hover {
+      border: 1px solid #81d1ff;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(2.47deg, #72B7FE -55.54%, #DFEFFF 78.76%);
+
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      transform: translateY(-20px);
+
+      .t-hover-icon {
+        display: block;
+        position: absolute;
+        left: 40%;
+        top: -37px;
+      }
+    }
+  }
+
+  ::ng-deep {
+    owl-carousel-o {
+      overflow: visible !important;
+    }
+
+    .owl-stage-outer {
+      overflow: visible !important;
+    }
+
+    .owl-stage {
+      overflow: visible !important;
+    }
+
+    .owl-item {
+      overflow: visible !important;
+    }
+  }
+}
+
+.connect-card {
+  background-image: url(/assets/icon/clients/connect-mask.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  background-color: #1589ff;
+  width: 75%;
+  margin-bottom: -28px;
+
+  .connect-btn {
+    box-shadow: 0px 6px 16px 0px #002a3833;
+    background-color: #ffffff;
+    color: #1589ff;
+    border-radius: 25px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background: radial-gradient(
+        110.98% 165.01% at 50% -65.01%,
+        #468cfd 0%,
+        #27529e 35.59%,
+        #11285a 75.2%,
+        #091941 96.82%
+      );
+      color: #fff;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+// /Responsive styles
+
+@media (max-width: 992px) {
+  .why-databricks {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .img-fluid {
+      max-width: 300px;
+    }
+  }
+
+  .break-tag {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .analytic-content {
+    h6 {
+      font-size: 26px !important;
+    }
+    p {
+      font-size: 14px !important;
+    }
+  }
+
+  .hero-content {
+    h1 {
+      font-size: 26px !important;
+    }
+    p {
+      font-size: 16px !important;
+    }
+  }
+
+  .solution-offerings {
+    grid-template-columns: repeat(2, 1fr);
+
+    .solution-card {
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .db-reference-section {
+    padding: 0px 10px 15px 10px !important;
+
+    h1 {
+      font-size: 26px !important;
+    }
+  }
+
+  .connect-card {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .analytic-content {
+    top: 25%;
+    left: 30px;
+    h6 {
+      font-size: 20px !important;
+    }
+    p {
+      font-size: 12px !important;
+    }
+  }
+
+  .hero-content {
+    padding: 20px 10px !important;
+  }
+
+  .why-databricks {
+    h2 {
+      margin-bottom: 0 !important;
+    }
+    .why-mahaaya-content {
+      margin-left: 0px;
+      margin-top: 10px;
+
+      p {
+        font-size: 14px !important;
+        margin-bottom: 8px !important;
+      }
+    }
+  }
+
+  .db-capabilities-section {
+    padding: 15px 0 !important;
+
+    h1 {
+      font-size: 26px !important;
+      padding-bottom: 15px !important;
+    }
+  }
+
+  .db-solutions-section {
+    padding: 15px 10px !important;
+
+    h1 {
+      font-size: 26px !important;
+      padding-bottom: 15px !important;
+    }
+  }
+
+  .solution-offerings {
+    grid-template-columns: 1fr;
+  }
+
+  .databricks-usecase {
+    padding: 15px 10px !important;
+    margin: 15px 0 !important;
+
+    h1 {
+      font-size: 26px !important;
+    }
+
+    .usecases-container {
+      padding: 15px 0 !important;
+      grid-template-columns: 1fr !important;
+
+      .use-case-detail {
+        .use-case-content {
+          .fs-lg {
+            font-size: 18px !important;
+          }
+          .fs-d {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .delivery-approach-container {
+    padding: 15px 10px 0 10px !important;
+
+    h1 {
+      font-size: 26px !important;
+    }
+    p {
+      font-size: 16px !important;
+      padding-bottom: 15px !important;
+    }
+  }
+
+  .connect-card {
+    padding: 20px 10px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-analytics {
+    padding: 15px 0 !important;
+  }
+  .analytic-content {
+    left: 20px;
+    h6 {
+      font-size: 20px !important;
+    }
+    p {
+      font-size: 12px !important;
+    }
+
+    .break-tag {
+      display: none;
+    }
+  }
+
+  .hero-content {
+    h1 {
+      font-size: 22px !important;
+    }
+    p {
+      font-size: 14px !important;
+    }
+  }
+
+  .delivery-approach-section {
+    div {
+      padding-bottom: 15px !important;
+    }
+  }
+
+  .delivery-approach-card {
+    height: auto !important;
+  }
+}

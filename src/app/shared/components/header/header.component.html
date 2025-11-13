@@ -1,0 +1,355 @@
+<section class="top-header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary-theme nav-border p-4 pb-3">
+      <a class="navbar-brand ms-4 mb-2" routerLink="/">
+        <img src="/assets/icon/logo.svg" alt="Mahaaya | logo " class="img img-fluid align-middle" data-bs-dismiss="offcanvas"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#headerOffcanvas"
+        aria-controls="headerOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" id="headerOffcanvas" tabindex="-1" aria-labelledby="headerOffcanvasLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item dropdown px-3 droopdowns" id="service-dropdowm">
+              <a class="nav-link dropdown-toggle py-3 fw-semibold fs-md theme-sub-sec custom-dropdown" [routerLink]="'/services/our-service'"
+                id="servicesdropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+             <!-- dropdown as services -->
+              <div class="dropdown-menu custom-menu custom-bigg-menu py-3" aria-labelledby="servicesdropdown">
+                <div class="d-lg-flex">
+                  <div class="p-4 primary-bg custom-width">
+                    <h5 class="ff-primary fs-lg fw-semibold head-theme">
+                      Cloud Advisory Services
+                    </h5>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="dropdown-item d-flex px-0 text-wrap my-3 " (click)="navigateToElement('da-strategy')" data-bs-dismiss="offcanvas">
+                          <div class="row">
+                            <div class="col-2 my-auto px-1">
+                              <div class="img-card">
+                                <img src="/assets/icon/capabilities/architectstrategy.svg"
+                                  alt="Mahaaya | cloud data in Mahaaya" class="img img-fluid mx-auto" />
+                              </div>
+                            </div>
+                            <div class="col-10">
+                              <div class="my-auto">
+                                <a class="ff-primary fw-semibold fs-d head-theme" >
+                                  Data and Architecture Strategy
+                                </a>
+                                <p class="ff-primary fs-sm theme-sub-sec mb-0 text-wrap">
+                                  Unlocking Datas Potential, Powering Your
+                                  Future.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex px-0 text-wrap my-3" (click)="navigateToElement('dt-strategy')" data-bs-dismiss="offcanvas">
+                          <div class="row">
+                            <div class="col-2 my-auto px-1">
+                              <div class="img-card">
+                                <img src="/assets/icon/capabilities/tranformationstrategy.svg"
+                                  alt="Mahaaya | cloud data in Mahaaya" class="img img-fluid mx-auto" />
+                              </div>
+                            </div>
+                            <div class="col-10">
+                              <div class="my-auto">
+                                <a class="ff-primary fw-semibold fs-d head-theme" >
+                                  Digital Transformation Strategy
+                                </a>
+                                <p class="ff-primary fs-sm theme-sub-sec mb-0 text-wrap">
+                                  Unleash Your Digital Potential.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex px-0 text-wrap my-3" (click)="navigateToElement('ca-strategy')" data-bs-dismiss="offcanvas">
+                          <div class="row">
+                            <div class="col-2 my-auto px-1">
+                              <div class="img-card">
+                                <img src="/assets/icon/capabilities/optimizationstrategy.svg"
+                                  alt="Mahaaya | cloud data in Mahaaya" class="img img-fluid mx-auto" />
+                              </div>
+                            </div>
+                            <div class="col-10">
+                              <div class="my-auto">
+                                <a class="ff-primary fw-semibold fs-d head-theme w-75" >
+                                  Cloud Optimization Strategy
+                                </a>
+                                <p class="ff-primary fs-sm theme-sub-sec mb-0 text-wrap">
+                                  Your Path to Cloud Management.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="ms-lg-4 p-4">
+                    <h5 class="ff-primary fs-lg fw-semibold head-theme">
+                      Technology Consulting
+                    </h5>
+                    <div class="d-flex tech-width">
+                      <ul class="list-unstyled w-50">
+                        <li>
+                          <a class="dropdown-item d-flex px-0 text-wrap my-2" (click)="navigateToElement('c-modernize')" data-bs-dismiss="offcanvas">
+                            <div class="row">
+                              <div class="col-2 my-auto px-1">
+                                <div class="img-card">
+                                  <img src="/assets/icon/capabilities/cloudmodernization.svg"
+                                    alt="Mahaaya | cloud data in Mahaaya" class="img img-fluid mx-auto d-flex" />
+                                </div>
+                              </div>
+                              <div class="col-10">
+                                <div class="my-auto">
+                                  <a class="ff-primary fw-semibold fs-d head-theme" >
+                                    Cloud Modernization
+                                  </a>
+                                  <p class="ff-primary fs-sm theme-sub-sec mb-0 text-wrap">
+                                    Revitalize Your Business with Cloud
+                                    Modernization.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item d-flex px-0 text-wrap my-2" (click)="navigateToElement('data-vishual')" data-bs-dismiss="offcanvas">
+                            <div class="row">
+                              <div class="col-2 my-auto px-1">
+                                <div class="img-card">
+                                  <img src="/assets/icon/capabilities/visualization.svg"
+                                    alt="Mahaaya | cloud data in Mahaaya" class="img img-fluid mx-auto d-flex" />
+                                </div>
+                              </div>
+                              <div class="col-10">
+                                <div class="my-auto">
+                                  <a class="ff-primary fw-semibold fs-d head-theme" >
+                                    Data Engineering & Visualization
+                                  </a>
+                                  <p class="ff-primary fs-sm theme-sub-sec mb-0 text-wrap">
+                                    Unleashing Insights with Streamlined
+                                    Engineering & Compelling Visualizations.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item d-flex px-0 text-wrap my-2" (click)="navigateToElement('analytic-modern')" data-bs-dismiss="offcanvas">
+                            <div class="row">
+                              <div class="col-2 my-auto px-1">
+                                <div class="img-card">
+                                  <img src="/assets/icon/capabilities/analyticsmodernization.svg"
+                                    alt="Mahaaya | cloud data in Mahaaya" class="img img-fluid mx-auto d-flex" />
+                                </div>
+                              </div>
+                              <div class="col-10">
+                                <div class="my-auto">
+                                  <a class="ff-primary fw-semibold fs-d head-theme w-75" >
+                                    Analytics Modernization
+                                  </a>
+                                  <p class="ff-primary fs-sm theme-sub-sec mb-0 text-wrap">
+                                    Unleash Data's Transformative Potential with
+                                    Real Time Insights.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a class="dropdown-item d-flex px-0 text-wrap my-2" (click)="navigateToElement('data-governance')" data-bs-dismiss="offcanvas">
+                            <div class="row">
+                              <div class="col-2 my-auto px-1">
+                                <div class="img-card">
+                                  <img src="/assets/icon/capabilities/datagovernance.svg"
+                                    alt="Mahaaya | cloud data in Mahaaya" class="img img-fluid mx-auto" />
+                                </div>
+                              </div>
+                              <div class="col-10">
+                                <div class="my-auto">
+                                  <a class="ff-primary fw-semibold fs-d head-theme" >
+                                    Data Governance
+                                  </a>
+                                  <p class="ff-primary fs-sm theme-sub-sec mb-0 text-wrap">
+                                    Enabling Trust and Confidence in Data.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item d-flex px-0 text-wrap my-3" [routerLink]="'/solutionmarketplace/aiSolutions'" data-bs-dismiss="offcanvas">
+                            <div class="row">
+                              <div class="col-2 my-auto px-1">
+                                <div class="img-card">
+                                  <img src="/assets/icon/capabilities/artificial-intelligence 1.svg"
+                                    alt="Mahaaya | cloud data in Mahaaya" class="img img-fluid mx-auto" />
+                                </div>
+                              </div>
+                              <div class="col-10">
+                                <div class="my-auto">
+                                  <a class="ff-primary fw-semibold fs-d head-theme" >
+                                    AI & Cognitive Services
+                                  </a>
+                                  <p class="ff-primary fs-sm theme-sub-sec mb-0 text-wrap">
+                                    Igniting the Future of Intelligent
+                                    Innovation.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item d-flex px-0 text-wrap my-3" (click)="navigateToElement('secure-compile')" data-bs-dismiss="offcanvas">
+                            <div class="row">
+                              <div class="col-2 my-auto px-1">
+                                <div class="img-card">
+                                  <img src="/assets/icon/capabilities/security.svg"
+                                    alt="Mahaaya | cloud data in Mahaaya" class="img img-fluid mx-auto" />
+                                </div>
+                              </div>
+                              <div class="col-10">
+                                <div class="my-auto">
+                                  <a class="ff-primary fw-semibold fs-d head-theme w-75" >
+                                    Security and Compliance
+                                  </a>
+                                  <p class="ff-primary fs-sm theme-sub-sec mb-0 text-wrap">
+                                    Safeguarding Your Digital Future.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown px-3 droopdowns">
+              <a class="nav-link dropdown-toggle py-3 fw-semibold fs-md theme-sub-sec custom-dropdown" id="Resources" role="button" data-bs-toggle="dropdown" aria-expanded="false" [routerLink]="'/solutionmarket'" >
+                Solution Marketplace
+              </a>
+              <ul class="dropdown-menu custom-menu p-4 pe-5" aria-labelledby="Resources">
+                <li>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme pb-2 p-0" href="#" data-bs-dismiss="offcanvas" [routerLink]="'/solutionmarketplace/analytics'">
+                      <img src="/assets/icon/capabilities/analyticsmodernization.svg"
+                        alt="Mahaaya | cloud data in Mahaaya" class="img-card img-fluid me-2" />
+                    Analytics Modernization
+                  </a>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme pb-2 p-0" href="#" data-bs-dismiss="offcanvas" [routerLink]="'/solutionmarketplace/dataplatform'">
+                    <img src="/assets/icon/solutionmarket/dataplatformicon.svg"
+                        alt="Mahaaya | cloud data in Mahaaya" class="img-card img-fluid me-2" />Data and Platform Migration
+                  </a>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme pb-2 p-0" href="#" data-bs-dismiss="offcanvas" [routerLink]="'/solutionmarketplace/aiSolutions'">
+                    <img src="/assets/icon/capabilities/artificial-intelligence 1.svg"
+                        alt="Mahaaya | cloud data in Mahaaya" class="img-card img-fluid me-2" />AI Solutions
+                  </a>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme pb-2 p-0" href="#" data-bs-dismiss="offcanvas" [routerLink]="'/solutionmarketplace/salesforce'">
+                    <span><img src="/assets/icon/solutionmarket/salesforce-icons/salesforce-logo.png"
+                      alt="Mahaaya | cloud data in Mahaaya" class="img-card img-fluid me-2" style="width: 50px;"/></span>Salesforce Services
+                  </a>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme pb-2 p-0" href="#" data-bs-dismiss="offcanvas" [routerLink]="'/solutionmarketplace/microfab'">
+                    <img src="/assets/icon/solutionmarket/fabricicon.svg"
+                        alt="Mahaaya | cloud data in Mahaaya" class="img-card img-fluid me-2" />Microsoft Fabric
+                  </a>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme pb-2 p-0" href="#" data-bs-dismiss="offcanvas" [routerLink]="'/solutionmarketplace/securitygovernance'">
+                    <img src="/assets/icon/solutionmarket/securityicon.svg"
+                        alt="Mahaaya | cloud data in Mahaaya" class="img-card img-fluid me-2" />Security and Governance
+                  </a>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme pb-2 p-0" href="#" data-bs-dismiss="offcanvas" [routerLink]="'/solutionmarketplace/application'">
+                    <span><img src="/assets/icon/solutionmarket/applicationicon.svg"
+                      alt="Mahaaya | cloud data in Mahaaya" class="img-card img-fluid me-2" /></span>Application Modernization
+                  </a>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme pb-2 p-0" href="#" data-bs-dismiss="offcanvas" [routerLink]="'/solutionmarketplace/databricks'">
+                    <span><img src="/assets/icon/solutionmarket/databricks-icons/data-pipeline-icon.svg"
+                      alt="Mahaaya | cloud data in Mahaaya" class="img-card img-fluid me-2" style="width: 50px;"/></span>Databricks
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-3 droopdowns">
+              <a class="nav-link dropdown-toggle py-3 fw-semibold fs-md theme-sub-sec custom-dropdown" id="Resources"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Resources
+              </a>
+              <ul class="dropdown-menu custom-menu py-4" aria-labelledby="Resources">
+                <li>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme px-4 pb-0" href="#" data-bs-dismiss="offcanvas" [routerLink]="'/customer'">
+                    Customers
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme px-4 pb-0" href="#" data-bs-dismiss="offcanvas" [routerLink]="'/event'">
+                    Events
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme px-4 pb-0" href="#" data-bs-dismiss="offcanvas" [routerLink]="'/blogs'">
+                    Blogs
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown px-3 droopdowns">
+              <a class="nav-link dropdown-toggle py-3 fw-semibold fs-md theme-sub-sec custom-dropdown" id="Company"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Company
+              </a>
+              <ul class="dropdown-menu custom-menu py-4" aria-labelledby="Company">
+                <li>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme px-4 pb-0" [routerLink]="'/about-us'" data-bs-dismiss="offcanvas">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme px-4 pb-0" (click)="navigateToAboutUs('team')" data-bs-dismiss="offcanvas">
+                    Our Leadership
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme px-4 pb-0" data-bs-dismiss="offcanvas" [routerLink]="'/ourlocation'">
+                    Our Locations
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item ff-primary fw-semibold fs-d head-theme px-4 pb-0" [routerLink]="'/contact-us'" data-bs-dismiss="offcanvas">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-theme-primary mb-2 mt-lg-0 mt-3 connect-btn"[routerLink]="'/contact-us'" data-bs-dismiss="offcanvas">
+            Lets Connect
+          </button>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</section>

@@ -1,0 +1,718 @@
+<!-- BANNER -->
+<section class="service-banner position-relative overflow-hidden" data-aos="fade-down" data-aos-duration="2000">
+  <div class="position-absolute service-content w-50 mx-auto">
+    <span class="fw-bb fs-3xl theme-secondary">Our Services</span>
+    <!-- <p class="text-center w-75 mx-auto theme-secondary">
+      We empower businesses to harness the power of data through streamlined
+      collection, integration, and insightful analysis. We architect
+    </p> -->
+  </div>
+</section>
+
+<!-- CLOUD-ADVISORY-SERVICE-SECTION -->
+<section class="pt-3 overflow-hidden" #sectionsWrapper>
+  <div class="container">
+
+    <span class="text-center d-flex justify-content-center fw-bb fs-1xl head-theme mt-4 mb-2">
+      Cloud Advisory Services</span>
+
+      <!-- CARD-1 -->
+    <div class="border border-1 bg-subsecondary-color rounded-4" id="da-strategy" data-aos="zoom-out" data-aos-duration="2000">
+      <div class="p-3 pb-0">
+        <div class="d-flex justify-content-between flex-column-reverse flex-lg-row">
+          <div class="p-3">
+            <img src="/assets/icon/capabilities/da-stategy.svg" alt=""/>
+            <div>
+            <h5 class="fw-bb fs-xl primary-theme-color pt-3">
+              Data and Architecture Strategy
+            </h5>
+            <button
+            class="accordion-button btn-theme-primary border-0 d-lg-none accobutton"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            [attr.aria-expanded]="
+              accordionStates['accordionExample'].showContent
+            "
+            (click)="toggleAccordion('accordionExample')"
+          ></button>
+            </div>
+            <p class="fw-rb fs-md theme-sub-sec pt-3">
+              Unlocking Datas Potential, Powering Your Future.
+            </p>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column">
+              <div class="h-100 w-100 slow-img">
+                <img
+                  src="/assets/image/img/about/servicecardimg.png"
+                  alt="service"
+                  [ngStyle]="{
+                    'height.px': accordionStates['accordionExample'].imageSize
+                  }"  class="img-fluid"
+                />
+              </div>
+              <div class="accordion" id="'accordionExample'">
+                <button
+                  class="accordion-button btn-theme-primary border-0 d-none d-lg-flex"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  [attr.aria-expanded]="
+                    accordionStates['accordionExample'].showContent
+                  "
+                  (click)="toggleAccordion('accordionExample')"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse w-100"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div
+            class="accordion-body p-3 pt-0 fw-400 fs-d head-theme fw-400 fs-d head-theme"
+          >
+            We empower businesses to harness the power of data through
+            streamlined collection, integration, and insightful analysis. We
+            architect scalable and agile technology infrastructures embracing
+            cloud adoption and seamless integration, aligning with core business
+            strategies for long-term growth and success. With a team of seasoned
+            experts and a focus on innovation, we deliver transformative
+            insights that accelerate your journey to the cloud, ensuring
+            tangible outcomes and optimized investments.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD-2 -->
+    <div class="border border-1 bg-subsecondary-color rounded-4 mt-3" id="dt-strategy" data-aos="zoom-out" data-aos-duration="2000">
+      <div class="p-3 pb-0">
+        <div class="d-flex justify-content-between flex-column-reverse flex-lg-row">
+          <div class="p-3">
+            <img src="/assets/icon/capabilities/dt-stategy.svg" alt="" />
+            <div>
+              <h5 class="fw-bb fs-xl primary-theme-color pt-3">
+                Digital Transformation Strategy
+              </h5>
+              <button
+              class="accordion-button btn-theme-primary border-0 d-lg-none accobutton"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsetwo"
+              [attr.aria-expanded]="
+                accordionStates['accordionExample'].showContent
+              "
+              (click)="toggleAccordion('accordionExample1')"
+            ></button>
+            </div>
+            <p class="fw-rb fs-md theme-sub-sec pt-3">
+              Unleash Your Digital Potential.
+            </p>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column-reverse">
+              <div class="accordion" id="'accordionExample1'">
+                <button
+                  class="accordion-button btn-theme-primary border-0 d-none d-lg-flex"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsetwo"
+                  [attr.aria-expanded]="
+                    accordionStates['accordionExample'].showContent
+                  "
+                  (click)="toggleAccordion('accordionExample1')"
+                ></button>
+              </div>
+              <div class="h-100 w-100 slow-img">
+                <img
+                  src="/assets/image/img/our-service/digitalimage.png"
+                  [ngStyle]="{
+                    'height.px': accordionStates['accordionExample1'].imageSize
+                  }"
+                  alt="digitalimage"
+                  class="img-fluid rounded-4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="collapsetwo"
+          class="accordion-collapse collapse w-100"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body p-3 pt-0 fw-400 fs-d head-theme">
+            Our Digital Transformation Strategy is your key to embracing
+            innovation and securing a competitive edge in the digital world.
+            With a personalized approach, we seamlessly integrate cutting-edge
+            technologies to optimize your business processes, make data-driven
+            decisions, and drive customer-centricity. By automating critical
+            tasks and future-proofing your organization, we pave the way for
+            sustained growth and resilience.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD-3 -->
+    <div class="border border-1 bg-subsecondary-color img-fluid rounded-4 mt-3" id="ca-strategy" data-aos="zoom-out" data-aos-duration="2000">
+      <div class="p-3 pb-0">
+        <div class="d-flex justify-content-between flex-column-reverse flex-lg-row">
+          <div class="p-3">
+            <img src="/assets/icon/capabilities/cloud-optimization.svg" alt="" />
+            <div>
+              <h5 class="fw-bb fs-xl primary-theme-color pt-3">
+                Cloud Optimization Strategy
+              </h5>
+
+              <button
+                    class="accordion-button btn-theme-primary border-0 d-lg-none accobutton"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsethree"
+                    aria-expanded="true"
+                    aria-controls="collapsethree"
+                    [attr.aria-expanded]="
+                      accordionStates['accordionExample'].showContent
+                    "
+                    (click)="toggleAccordion('accordionExample2')"
+                  ></button>
+            </div>
+            <p class="fw-rb fs-md theme-sub-sec pt-3">
+              Your Path to Cloud Management.
+            </p>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column-reverse">
+              <div class="accordion" id="accordionExample">
+                <button
+                  class="accordion-button btn-theme-primary border-0 d-none d-lg-flex"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsethree"
+                  aria-expanded="true"
+                  aria-controls="collapsethree"
+                  [attr.aria-expanded]="
+                    accordionStates['accordionExample'].showContent
+                  "
+                  (click)="toggleAccordion('accordionExample2')"
+                ></button>
+              </div>
+              <div class="h-100 w-100 slow-img">
+                <img
+                  src="/assets/image/img/our-service/cloudoptimizationimg.png"
+                  [ngStyle]="{
+                    'height.px': accordionStates['accordionExample2'].imageSize
+                  }"
+                  alt="cloudoptimizationimg"
+                  class="img-fluid rounded-4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="collapsethree"
+          class="accordion-collapse collapse w-100"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body p-3 pt-0 fw-400 fs-d head-theme">
+            Our Cloud Optimization Strategy empowers you to unlock the full
+            potential of the cloud while minimizing unnecessary expenses.
+            Through in-depth spend analytics and right-sizing resources, we
+            ensure you pay only for what you need, achieving cost-effectiveness
+            without compromising performance. With continuous optimization and
+            data-driven decision-making, our tailored approach sets the
+            foundation for sustained efficiency and ongoing cost reduction.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH-CONSULTING -->
+<section class="py-4 mt-4 overflow-hidden">
+  <div class="container">
+
+    <span class="text-center d-flex justify-content-center fw-bb fs-1xl head-theme mb-4">
+      Technology Consulting</span>
+      <!-- CARD-1 -->
+    <div class="border border-1 bg-subsecondary-color rounded-4" id="c-modernize" data-aos="zoom-out" data-aos-duration="2000">
+      <div class="p-3 pb-0">
+        <div class="d-flex justify-content-between flex-column-reverse flex-lg-row">
+          <div class="p-3">
+            <img src="/assets/icon/capabilities/cloud-modernize.svg" alt="" />
+            <div>
+              <h5 class="fw-bb fs-xl primary-theme-color pt-3">
+                Cloud Modernization
+              </h5>
+
+              <button
+                    class="accordion-button btn-theme-primary border-0 d-lg-none accobutton"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsefour"
+                    aria-expanded="true"
+                    aria-controls="collapsefour"
+                    [attr.aria-expanded]="
+                      accordionStates['accordionExample'].showContent
+                    "
+                    (click)="toggleAccordion('accordionExample3')"
+                  ></button>
+            </div>
+            <p class="fw-rb fs-md theme-sub-sec pt-3">
+              Revitalize Your Business with Cloud Modernization.
+            </p>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column-reverse">
+              <div class="accordion" id="accordionExample">
+                <button
+                  class="accordion-button btn-theme-primary border-0 d-none d-lg-flex"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsefour"
+                  aria-expanded="true"
+                  aria-controls="collapsefour"
+                  [attr.aria-expanded]="
+                    accordionStates['accordionExample'].showContent
+                  "
+                  (click)="toggleAccordion('accordionExample3')"
+                ></button>
+              </div>
+              <div class="h-100 w-100 slow-img">
+                <img
+                  src="/assets/image/img/our-service/cloudmodernizatioimg.png"
+                  [ngStyle]="{
+                    'height.px': accordionStates['accordionExample3'].imageSize
+                  }"
+                  alt="cloudmodernizatioimg"
+                  class="img-fluid rounded-4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="collapsefour"
+          class="accordion-collapse collapse w-100"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body p-3 pt-0 fw-400 fs-d head-theme">
+            Our Cloud Modernization service offers a tailored and comprehensive
+            approach to upgrade your technology infrastructure. We unlock the
+            full potential of the cloud, enabling increased scalability,
+            flexibility, and agility for your business. Seamlessly migrating
+            your data and applications, we ensure optimal performance, enhanced
+            insights, and improved user experiences. With a client-centric
+            focus, we prioritize your unique business objectives throughout the
+            modernization process.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD-2 -->
+    <div class="border border-1 bg-subsecondary-color rounded-4 mt-3" id="data-vishual" data-aos="zoom-out" data-aos-duration="2000">
+      <div class="p-3 pb-0">
+        <div class="d-flex justify-content-between flex-column-reverse flex-lg-row">
+          <div class="p-3">
+            <img src="/assets/icon/capabilities/data-engineering-v.svg" alt="" />
+            <div>
+            <h5 class="fw-bb fs-xl primary-theme-color pt-3">
+              Data Engineering & Visualization
+            </h5>
+
+            <button
+                  class="accordion-button btn-theme-primary border-0 d-lg-none accobutton"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsefive"
+                  aria-expanded="true"
+                  aria-controls="collapsefive"
+                  [attr.aria-expanded]="
+                    accordionStates['accordionExample'].showContent
+                  "
+                  (click)="toggleAccordion('accordionExample4')"
+                ></button>
+            </div>
+            <p class="fw-rb fs-md theme-sub-sec pt-3">
+              Unleashing Insights with Streamlined Engineering & Compelling Visualizations.
+            </p>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column-reverse">
+              <div class="accordion" id="accordionExample">
+                <button
+                  class="accordion-button btn-theme-primary border-0 d-none d-lg-flex"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsefive"
+                  aria-expanded="true"
+                  aria-controls="collapsefive"
+                  [attr.aria-expanded]="
+                    accordionStates['accordionExample'].showContent
+                  "
+                  (click)="toggleAccordion('accordionExample4')"
+                ></button>
+              </div>
+              <div class="h-100 w-100 slow-img">
+                <img
+                  src="/assets/image/img/our-service/visualationimg.png"
+                  [ngStyle]="{
+                    'height.px': accordionStates['accordionExample4'].imageSize
+                  }"
+                  alt="visualationimg"
+                  class="img-fluid rounded-4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="collapsefive"
+          class="accordion-collapse collapse w-100"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body p-3 pt-0 fw-400 fs-d head-theme">
+            Our Data Engineering & Visualization service empowers businesses
+            with comprehensive data processing capabilities and compelling
+            visualizations. We streamline data engineering processes, ensuring
+            accurate and scalable data architecture to support insightful
+            analytics. Our advanced data visualization transforms complex
+            information into intuitive visuals, enabling data-driven
+            decision-making. With a user-centric approach and a focus on data
+            security, we tailor our solutions to align with your unique business
+            objectives.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD-3 -->
+    <div class="border border-1 bg-subsecondary-color rounded-4 mt-3" id="analytic-modern" data-aos="zoom-out" data-aos-duration="2000">
+      <div class="p-3 pb-0">
+        <div class="d-flex justify-content-between flex-column-reverse flex-lg-row">
+          <div class="p-3">
+            <img src="/assets/icon/capabilities/analytics-modernize.svg" alt="" />
+            <div>
+              <h5 class="fw-bb fs-xl primary-theme-color pt-3">
+                Analytics Modernization
+              </h5>
+
+              <button
+                    class="accordion-button btn-theme-primary border-0 d-lg-none accobutton"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsesix"
+                    aria-expanded="true"
+                    aria-controls="collapsesix"
+                    [attr.aria-expanded]="
+                      accordionStates['accordionExample'].showContent
+                    "
+                    (click)="toggleAccordion('accordionExample5')"
+                  ></button>
+            </div>
+            <p class="fw-rb fs-md theme-sub-sec pt-3">
+              Unleash Data's Transformative Potential with Real Time Insights.
+            </p>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column-reverse">
+              <div class="accordion" id="accordionExample">
+                <button
+                  class="accordion-button btn-theme-primary border-0 d-none d-lg-flex"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsesix"
+                  aria-expanded="true"
+                  aria-controls="collapsesix"
+                  [attr.aria-expanded]="
+                    accordionStates['accordionExample'].showContent
+                  "
+                  (click)="toggleAccordion('accordionExample5')"
+                ></button>
+              </div>
+              <div class="h-100 w-100 slow-img">
+                <img
+                  src="/assets/image/img/our-service/analyticsimg.png"
+                  [ngStyle]="{
+                    'height.px': accordionStates['accordionExample5'].imageSize
+                  }"
+                  alt="analyticsimg"
+                  class="img-fluid rounded-4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="collapsesix"
+          class="accordion-collapse collapse w-100"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body p-3 pt-0 fw-400 fs-d head-theme">
+            Our Analytics Modernization service redefines data intelligence by
+            seamlessly integrating IoT (Internet of Things) technology and
+            real-time analytics. We revolutionize your analytics infrastructure,
+            enabling efficient data processing and analysis that empower agile
+            decision making. Our tailored approach ensures scalability and
+            adaptability to handle the growing volumes of data. Experience the
+            transformative power of real-time analytics and IoT-driven
+            intelligence with our Analytics Modernization service, propelling
+            your business towards a data-driven future
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD-4 -->
+    <div class="border border-1 bg-subsecondary-color rounded-4 mt-3" id="data-governance" data-aos="zoom-out" data-aos-duration="2000">
+      <div class="p-3 pb-0">
+        <div class="d-flex justify-content-between flex-column-reverse flex-lg-row">
+          <div class="p-3">
+            <img src="/assets/icon/capabilities/data-governance.svg" alt="" />
+            <div>
+            <h5 class="fw-bb fs-xl primary-theme-color pt-3">
+              Data Governance
+            </h5>
+
+            <button
+                  class="accordion-button btn-theme-primary border-0 d-lg-none accobutton"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseseven"
+                  aria-expanded="true"
+                  aria-controls="collapseseven"
+                  [attr.aria-expanded]="
+                    accordionStates['accordionExample'].showContent
+                  "
+                  (click)="toggleAccordion('accordionExample6')"
+                ></button>
+            </div>
+            <p class="fw-rb fs-md theme-sub-sec pt-3">
+              Enabling Trust and Confidence in Data.
+            </p>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column-reverse">
+              <div class="accordion" id="accordionExample">
+                <button
+                  class="accordion-button btn-theme-primary border-0 d-none d-lg-flex"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseseven"
+                  aria-expanded="true"
+                  aria-controls="collapseseven"
+                  [attr.aria-expanded]="
+                    accordionStates['accordionExample'].showContent
+                  "
+                  (click)="toggleAccordion('accordionExample6')"
+                ></button>
+              </div>
+              <div class="h-100 w-100 slow-img">
+                <img
+                  src="/assets/image/img/our-service/governance.png"
+                  [ngStyle]="{
+                    'height.px': accordionStates['accordionExample6'].imageSize
+                  }"
+                  alt="servicecardimg"
+                  class="img-fluid rounded-4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="collapseseven"
+          class="accordion-collapse collapse w-100"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body p-3 pt-0 fw-400 fs-d head-theme">
+            Our Data Governance service provides a comprehensive approach to
+            managing data throughout its lifecycle. Our tailored strategies
+            enforce data quality standards, privacy regulations, and security
+            measures. With a focus on transparency and accountability, we
+            empower your organization to make informed decisions with
+            confidence. Experience the peace of mind that comes with a
+            well-governed data environment and unlock the true potential of your
+            data-driven initiatives.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD-5 -->
+    <div class="border border-1 bg-subsecondary-color rounded-4 mt-3" id="ai-cognitive" data-aos="zoom-out" data-aos-duration="2000">
+      <div class="p-3 pb-0">
+        <div class="d-flex justify-content-between flex-column-reverse flex-lg-row">
+          <div class="p-3">
+            <img src="/assets/icon/capabilities/ai-cognitive-service.svg" alt="" />
+            <div>
+              <h5 class="fw-bb fs-xl primary-theme-color pt-3">
+                AI & Cognitive Services
+              </h5>
+
+              <button
+                    class="accordion-button btn-theme-primary border-0 d-lg-none accobutton"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseehight"
+                    aria-expanded="true"
+                    aria-controls="collapseehight"
+                    [attr.aria-expanded]="
+                      accordionStates['accordionExample'].showContent
+                    "
+                    (click)="toggleAccordion('accordionExample7')"
+                  ></button>
+            </div>
+            <p class="fw-rb fs-md theme-sub-sec pt-3">
+              Igniting the Future of Intelligent Innovation.
+            </p>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column-reverse">
+              <div class="accordion" id="accordionExample">
+                <button
+                  class="accordion-button btn-theme-primary border-0 d-none d-lg-flex"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseehight"
+                  aria-expanded="true"
+                  aria-controls="collapseehight"
+                  [attr.aria-expanded]="
+                    accordionStates['accordionExample'].showContent
+                  "
+                  (click)="toggleAccordion('accordionExample7')"
+                ></button>
+              </div>
+              <div class="h-100 w-100 slow-img">
+                <img
+                  src="/assets/image/img/our-service/aiimg.png"
+                  [ngStyle]="{
+                    'height.px': accordionStates['accordionExample7'].imageSize
+                  }"
+                  alt="aiimg"
+                  class="img-fluid rounded-4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="collapseehight"
+          class="accordion-collapse collapse w-100"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body p-3 pt-0 fw-400 fs-d head-theme">
+            Our AI & Cognitive Services bring intelligent automation and the
+            power of OpenAI to your fingertips. With a focus on delivering
+            nimble solutions, we harness the potential of artificial
+            intelligence and cognitive capabilities to transform your business.
+            Our comprehensive approach includes advanced machine learning
+            algorithms, natural language processing, computer vision, and more,
+            enabling data-driven decision-making and enhancing user experiences.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD-6 -->
+    <div class="border border-1 bg-subsecondary-color rounded-4 mt-3" id="secure-compile" data-aos="zoom-out" data-aos-duration="2000">
+      <div class="p-3 pb-0">
+        <div class="d-flex justify-content-between flex-column-reverse flex-lg-row">
+          <div class="p-3">
+            <img src="/assets/icon/capabilities/security-compailence.svg" alt="" />
+            <div>
+            <h5 class="fw-bb fs-xl primary-theme-color pt-3">
+              Security and Compliance
+            </h5>
+
+            <button
+                  class="accordion-button btn-theme-primary border-0 d-lg-none accobutton"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsenine"
+                  aria-expanded="true"
+                  aria-controls="collapsenine"
+                  [attr.aria-expanded]="
+                    accordionStates['accordionExample'].showContent
+                  "
+                  (click)="toggleAccordion('accordionExample8')"
+                ></button>
+            </div>
+            <p class="fw-rb fs-md theme-sub-sec pt-3">
+              Safeguarding Your Digital Future.
+            </p>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column-reverse">
+              <div class="accordion" id="accordionExample">
+                <button
+                  class="accordion-button btn-theme-primary border-0 d-none d-lg-flex"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsenine"
+                  aria-expanded="true"
+                  aria-controls="collapsenine"
+                  [attr.aria-expanded]="
+                    accordionStates['accordionExample'].showContent
+                  "
+                  (click)="toggleAccordion('accordionExample8')"
+                ></button>
+              </div>
+              <div class="h-100 w-100 slow-img">
+                <img
+                  src="/assets/image/img/our-service/securityimg.png"
+                  [ngStyle]="{
+                    'height.px': accordionStates['accordionExample8'].imageSize
+                  }"
+                  alt="securityimg"
+                  class="img-fluid rounded-4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="collapsenine"
+          class="accordion-collapse collapse w-100"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body p-3 pt-0 fw-400 fs-d head-theme">
+            Our Security & Compliance services provide comprehensive solutions
+            to fortify your organization against evolving cyber threats and
+            ensure adherence to industry regulations. We deploy robust security
+            measures, conduct thorough risk assessments, and implement proactive
+            monitoring to safeguard your data and infrastructure. Experience the
+            peace of mind that comes with knowing your digital assets are
+            protected by a reliable security and compliance framework
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

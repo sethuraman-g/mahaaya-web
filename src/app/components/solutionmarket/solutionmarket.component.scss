@@ -1,0 +1,114 @@
+.solution-banner {
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.marketplaces-content {
+  background: radial-gradient(110.98% 165.01% at 50% -65.01%, #468CFD 0%, #27529E 35.59%, #11285A 75.2%, #091941 96.82%);
+}
+
+.main-market {
+  background-color: #D3E9FF;
+}
+
+.main-marketplace {
+  margin-right: 3rem !important;
+  margin-left: 3rem !important;
+  margin-top: -30px;
+}
+
+.marketplace-card {
+  // width: 18%;
+  height: 100%;
+  box-shadow: 0px 4px 14px 0px #00000012;
+  transition: .3s ease-in-out;
+}
+
+// .cloud {
+//   border: 1px solid #e6e9ec;
+//   border-radius: 24px;
+
+// }
+
+.marketplace-card:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1019607843);
+  background-color: #fff;
+  transition: all ease-in 0.3s;
+  transform: scale(1.1);
+}
+
+.bg-radius {
+  border-radius: 0px 0px 25px 25px;
+  background-color: white;
+}
+
+.solution-icon img {
+  background: linear-gradient(197.79deg, #0FA6FC -6.08%, #D048FC 73.56%);
+  padding: 10px;
+  border-radius: 50%;
+  width: 35%;
+}
+
+
+.marketplace-content::after {
+  content: "";
+  width: 472px;
+  height: 415px;
+  z-index: 9;
+  background-image: url(/assets/image/img/marketplace/grosslineimg.png);
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.card {
+  cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+  .card-wrap {
+    // flex-wrap: wrap;
+    // gap: 2rem;
+  }
+
+  // .marketplace-card {
+  //   width: 100%;
+  // }
+
+  .solution-banner {
+    width: 100% !important;
+    border-radius: 2rem !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .card-wrap {
+    margin-top: 1.5rem !important;
+  }
+
+  .solution-banner {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-wrap {
+    margin-top: 1.5rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  // .marketplace-card {
+  //   width: 100%;
+  // }
+
+  .marketplace-content::after {
+    width: 260px !important;
+  }
+
+  .card-wrap {
+    margin-top: 1.5rem !important;
+  }
+}

@@ -1,0 +1,172 @@
+.team-block{
+    position:relative;
+    }
+    
+ul li {
+    list-style-type: none;
+}
+
+    .team-block .inner-box{
+    position:relative;
+    padding:40px 70px 28px 0px;
+    }
+    
+    .team-block .inner-box:before{
+    position:absolute;
+    content:'';
+    right:74px;
+    top:0px;
+    left:70px;
+    bottom:0px;
+    border-radius:10px;
+    background-color:#f5f5f5;
+    width: 69%;
+    height: 100%;
+    -webkit-transition:all 600ms ease;
+    -moz-transition:all 600ms ease;
+    -ms-transition:all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition:all 600ms ease;
+    }
+    
+    .team-block .inner-box::after{
+    position:absolute;
+    content:'';
+    top:0px;
+    left: 70px;
+    bottom:0px;
+    height: 27rem;
+    width:0%;
+    border-radius:10px;
+    -webkit-transition:all 600ms ease;
+    -moz-transition:all 600ms ease;
+    -ms-transition:all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition:all 600ms ease;
+    background-image: -ms-linear-gradient(top, 85.7deg, #0FA6FC 1.77%, #7C30FF 51.4%, #D048FC 123.87%);
+    background-image: -moz-linear-gradient(top, #0FA6FC 1.77%, #7C30FF 51.4%, #D048FC 123.87%);
+    background-image: -o-linear-gradient(top, #0FA6FC 1.77%, #7C30FF 51.4%, #D048FC 123.87%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #D048FC), color-stop(100, #7C30FF 51.4%,));
+    background-image: -webkit-linear-gradient(top, #0FA6FC 1.77%, #7C30FF 51.4%, #D048FC 123.87%);
+    background-image: linear-gradient(to bottom, #0FA6FC 1.77%, #7C30FF 51.4%, #D048FC 123.87%);
+    }
+    
+    .team-block .inner-box:hover::after{
+        width: 69%;
+        // height: 27rem;
+        height: 100%;
+    }
+    
+    .modal-header {
+        background: #0fa6fc;
+    }
+
+    .leader-img-container {
+        width: 20vmin;
+        height: 20vmin;
+    }
+
+    .fa-chevron-right:before {
+        content: "\f054";
+    }
+
+    .fa-chevron-left:before {
+    content: "\f053";
+}
+
+    .team-block .inner-box .social-icons{
+        position: absolute;
+        right: 25%;
+        top: 100px;
+        z-index: 1;
+    }
+    
+    .team-block .inner-box .social-icons li{
+    position:relative;
+    margin-bottom:20px;
+    }
+    
+    .team-block .inner-box .social-icons li a{
+    position:relative;
+    color:#e40000;
+    font-size:18px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    }
+    
+    .team-block .inner-box:hover .lower-content h3 a,
+    .team-block .inner-box:hover .lower-content{
+    color:#ffffff !important;
+    }
+
+
+    .btn-close {
+        position: relative;
+        bottom: 4rem;
+    }
+
+    .navigate_icon{
+        right: 9%;
+        top: 63%;
+    }
+
+    .navigate_icon .btn {
+        color: #0097cc!important;
+        background: #ffffff;
+        padding: 5px 13px;
+        box-shadow: 0 2px 12px #354b571f;
+        border-radius: 8px;
+    }
+
+.image img{
+    width: 60% !important;
+     z-index: 9;
+     padding: 9px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.2);
+}
+
+    .team-block .inner-box .lower-content{
+    position:relative;
+    text-align:left;
+    z-index:1;
+    padding: 30px 0px 0px 93px;
+    }
+    
+    
+    .team-block.style-two .inner-box:hover .lower-content {
+    color:#ffffff !important;
+    }
+    .team-block .inner-box:hover .social-icons li a img{
+        filter: brightness(32.5) saturate(46%) !important;
+    }
+    
+    
+      .social-icons img{
+        border: 1px solid #9aa5ab;
+        width: 28px;
+        height: 28px;
+        padding: 5px;
+        border-radius: 50px!important;
+        transition: .3s linear;
+        opacity: .8;
+        cursor: pointer;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+   .leaders_name{
+    text-wrap: inherit !important;
+   }
+//    .leader_position{
+//     text-wrap: nowrap;
+//    }
+   .team-block .inner-box:before{
+    width: 76%;
+   }
+   .team-block .inner-box:hover::after {
+    width: 76%;
+    }
+}
