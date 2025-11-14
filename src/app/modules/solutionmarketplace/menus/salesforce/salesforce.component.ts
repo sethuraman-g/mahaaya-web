@@ -33,6 +33,7 @@ salesforceExpertises = [
           points: [
             'Sales Cloud – Streamline customer journeys from lead to revenue',
             'Service Cloud – Deliver faster, smarter, personalised service experiences',
+            'Marketing Cloud – Engage customers with smarter, unified, and automated cross channel marketing journeys',
             'Experience Cloud – Connect partners, customers, and communities with unified data',
           ],
         }
@@ -57,11 +58,11 @@ salesforceExpertises = [
       id: 4,
       title: 'Field Service Excellence',
       description:
-        'Mahaaya helps service organisations optimise workforce operations through Salesforce Field Service.',
+        'Mahaaya helps service organisations optimize workforce operations through Salesforce Field Service.',
         content: {
           title: 'Our focus areas:',
           points: [
-            'Intelligent scheduling and resource optimisation',
+            'Intelligent scheduling and resource optimization',
             'Real-time technician enablement via mobile apps',
             'IoT, parts, and asset tracking integration',
             'Service analytics for continuous performance improvement',
@@ -124,7 +125,7 @@ salesforceExpertises = [
         content: {
           title: 'Support includes:',
           points: [
-            'Platform monitoring and optimisation',
+            'Platform monitoring and optimization',
             'Data governance and user enablement',
             'On-demand admin, analyst, and architect resources',
           ],
