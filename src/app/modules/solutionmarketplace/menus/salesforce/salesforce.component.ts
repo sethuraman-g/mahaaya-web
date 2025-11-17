@@ -137,7 +137,7 @@ salesforceExpertises = [
   salesforceServices = [
     {
       icon: '/assets/icon/solutionmarket/salesforce-icons/specialised-icon.svg',
-      title: 'Specialised Expertise',
+      title: 'Specialized Expertise',
       description:
         'Focused Proficiency in revenue cloud Advanced, Field Service, Agentforce, and Data Cloud - delivering solutions that blend precision and innovation.',
     },
