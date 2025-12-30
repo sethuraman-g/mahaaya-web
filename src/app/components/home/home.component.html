@@ -111,35 +111,6 @@
   </div>
 </section>
 
-<!-- SEC-2-CONTENT -->
-<section class="sub-secondary-color-bg pt-5 mt-3 mb-0 pb-0 overflow-hidden">
-  <div class="container" data-aos="fade-down" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-    <div class="partners">
-      <div class="row">
-        <div class="col-lg-6 col-12 my-auto order-1 order-lg-0">
-           <p class="ff-primary fw-bold head-theme fs-lg mb-3 lh-35"><span><img src="/assets/icon/global-icon/home-logo.svg" alt="" class="mb-2 home-logo"></span> excels in leveraging cutting-edge tools and technologies to drive innovation and deliver tangible results.</p>
-
-           <p class="ff-primary fw-bold head-theme fs-lg mb-3 lh-35"><span><img src="/assets/icon/global-icon/home-logo.svg" alt="" class="mb-2 home-logo"></span> is an amalgamation between <span class="numentica">Numentica</span>, a provider of technology solutions, and <span class="data">Data</span><span class="platform">Platform</span><span class="experts">Experts</span>, specialists in data and platform solutions. </p>
-
-           <p class="ff-primary fw-bold head-theme fs-lg mb-3 lh-35">We are your trusted allies in embracing the disruptive future of Data and AI.</p>
-
-        </div>
-        <div class="col-lg-6 col-12 order-0 order-lg-1">
-            <div class="ms-lg-5 w-100 h-100">
-              <div class="card border-0">
-                <img
-                src="https://d3hnagtjo0sr6w.cloudfront.net/assets/image/img/favimg.png"
-                alt="Mahaaya | company discussion"
-                class="img-fluid h-100"
-              />
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-</section>
-
 <!-- OUR-PRIMARY-ALLIANCES -->
 <section class="partners-testimonial py-5 overflow-hidden">
   <div class="position-relative py-4">
@@ -176,6 +147,13 @@
                     As a solutions partner for Microsoft, we offer clients a compelling combination of IP solutions,
                     abundant knowledge and resources. This powerful alliance aims to support organizations in achieving
                     their business objectives and remaining competitive in today’s fast-paced market.</p>
+                    <div >
+                      <img
+                      src="/assets/icon/clients/ms-fabric-featured-partner.png"
+                      alt="Fabric Featured Partner"
+                      class="img img-fluid fabric-image"
+                      />
+                    </div>
                 </div>
 
 
@@ -445,6 +423,91 @@
     </div>
   </div>
 </section>
+
+<!-- OUR AI CAPABILITIES -->
+<div class="my-5 py-5 main-analytics" data-aos="zoom-in" data-aos-duration="2500">
+  <h6 class="text-center fw-bb fs-1xl head-theme pb-3">
+    Our AI Capabilities
+  </h6>
+  <!-- Marquee wrapper -->
+  <div class="marquee-wrapper">
+    <div class="marquee-content">
+      <!-- <ng-container> -->
+        <div *ngFor="let data of aiCapablitiesData">
+          <div class="ai-data d-flex flex-column gap-2 justify-content-center py-3">
+            <img [src]="data.icon" alt="Mahaaya | AI Capabilities" class="img-fluid"
+              style="height: 50px; width: 50px;" />
+            <p class="head-theme fs-lg fw-semibold mb-0">{{ data.title }}</p>
+          </div>
+        </div>
+      <!-- </ng-container> -->
+    </div>
+  </div>
+</div>
+
+
+<!-- MAHAAYA-ACCELERATORS -->
+<div class="container py-5" data-aos="zoom-in" data-aos-duration="3000">
+  <h6
+    class="text-center fw-bb fs-1xl head-theme pb-5 mt-0 mb-5"
+  >
+    Mahaaya Accelerators
+  </h6>
+  <div class="row g-5 pb-5 my-5">
+    <!-- Left Side: Circular Tabs -->
+    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+      <div class="circle-wrapper mb-5">
+        <!-- Circle Tabs -->
+        <div
+          *ngFor="let tab of tabs; let i = index"
+          class="circle-tab"
+          [class.active]="i === activeIndex"
+          [style.transform]="getTabTransform(i)"
+          (click)="setActive(i)"
+        >
+          <span>{{ tab.label }}</span>
+        </div>
+
+        <!-- Center Image -->
+        <div class="circle-center">
+          <img
+            src="/assets/image/img/aiMahaaya.png"
+            alt="Mahaaya"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side: Content -->
+    <div class="col-lg-6 d-flex flex-column">
+      <h4 class="text-primary fw-bold mt-lg-0 mt-5 pt-5">
+        {{ tabs[activeIndex].title }}
+      </h4>
+      <p class="text-dark fs-md">{{ tabs[activeIndex].content }}</p>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICE OFFERINGS -->
+<div class="container py-5 mb-5">
+  <h1 class="text-center fw-bb fs-1xl head-theme pb-5">Service Offerings</h1>
+  <div class="row g-4">
+    <div class="col-lg-4 col-md-6" *ngFor="let data of serviceOfferingsData">
+      <div class="text-center service-offering-card">
+        <img
+          [src]="data.icon"
+          [alt]="data.title"
+          class="img img-fluid mb-2"
+          style="height: 60px; width: 60px;"
+        />
+        <p class="fw-semibold fs-md mb-0">
+          {{ data.title }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- OUR-CLIENTS -->
 <section class="bg-highlight-primary py-5 overflow-hidden" [routerLink]="'/customer'">
