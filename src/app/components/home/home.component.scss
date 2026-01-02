@@ -438,7 +438,8 @@ hr {
 }
 
 .fabric-image {
-  width: 150px !important;
+  width: 200px !important;
+  margin-right: 100px !important;
 }
 
 /* Wrapper for the marquee effect */
@@ -497,6 +498,10 @@ hr {
 
   .mahaya-badge {
     width: 26%;
+  }
+
+  .fabric-image {
+    margin-right: 0 !important;
   }
 }
 
