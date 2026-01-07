@@ -22,6 +22,7 @@ import { BlogsComponent } from './components/blogs/blogs.component';
 import { BlogContentComponent } from './components/blog-content/blog-content.component';
 import { Blog2ContentComponent } from './components/blog2-content/blog2-content.component';
 import { Blog3ContentComponent } from './components/blog3-content/blog3-content.component';
+import { SummitComponent } from './components/summit/summit.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { Blog3ContentComponent } from './components/blog3-content/blog3-content.
     BlogsComponent,
     BlogContentComponent,
     Blog2ContentComponent,
-    Blog3ContentComponent
+    Blog3ContentComponent,
+    SummitComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'Mahaaya' }),
