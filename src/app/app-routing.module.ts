@@ -15,6 +15,7 @@ import { Blog2ContentComponent } from './components/blog2-content/blog2-content.
 import { Blog3ContentComponent } from './components/blog3-content/blog3-content.component';
 import { OurServiceComponent } from './modules/services/menus/our-service/our-service.component';
 import { LeadershipteamComponent } from './components/leadershipteam/leadershipteam.component';
+import { SummitComponent } from './components/summit/summit.component';
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: "enabled",
@@ -276,6 +277,31 @@ const routes: Routes = [
           { property: 'og:image:url', content: "https://mahaaya.com//assets/og-img/Siva-Periasamy.jpg" },
           { property: 'og:site_name', content: 'Mahaaya' },
           { property: 'og:url', content: 'https://www.mahaaya.com/about-us#team' }
+        ]
+      }
+    }
+  },
+  {
+    path: 'summit', component: SummitComponent,
+    data: {
+      seo: {
+        title: 'Summit Data + AI',
+        metaTags: [
+          { name: 'description', content: 'Join us for an exclusive event where Data and AI converge to shape the future of technology and innovation.' },
+          { name: 'keywords', content: 'Data Summit, AI Summit, Data and AI event, technology conference' },
+          { name: 'MobileOptimized', content: 'width' },
+          { name: 'HandheldFriendly', content: 'true' },
+          { property: 'og:image', content: "https://mahaaya.com//assets/image/img/ai-summit-banner-2.png" },
+          { property: 'og:image:width', content: '200' },
+          { property: 'og:image:height', content: '200' },
+          { property: 'og:image:type', content: 'image/jpg' },
+          { property: 'og:title', content: 'Summit Data + AI' },
+          { property: 'og:type', content: 'Website' },
+          { property: 'og:description', content: 'Join us for an exclusive event where Data and AI converge to shape the future of technology and innovation.' },
+          { property: 'og:image:type', content: 'image/jpg' },
+          { property: 'og:image:url', content: "https://mahaaya.com//assets/image/img/ai-summit-banner-2.png" },
+          { property: 'og:site_name', content: 'Mahaaya' },
+          { property: 'og:url', content: 'https://www.mahaaya.com/summit' }
         ]
       }
     }

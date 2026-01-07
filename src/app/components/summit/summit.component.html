@@ -1,0 +1,225 @@
+<section class="summit-hero position-relative overflow-hidden" data-aos="fade-down" data-aos-duration="2000">
+    <div class="summit-hero-overlay"></div>
+    <div class="summit-hero-content position-relative">
+        <div class="summit-date-location">
+            <span class="summit-date-text">Feb 26, 2026 • Los Angeles, CA</span>
+        </div>
+        <div class="summit-title">
+            <h1 class="summit-main-title">
+                <span class="title-line-1">Data+AI</span>
+                <span class="title-line-2">SUMMIT</span>
+            </h1>
+        </div>
+        <div class="summit-cta">
+            <div class="summit-cta-wrapper">
+                <div class="summit-cta-box">
+                    <span class="summit-cta-text">Invitation - Only event for IT Leaders</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="summit-marquee-wrapper">
+        <div class="summit-marquee">
+            <div class="summit-marquee-content">
+                <span class="marquee-item">Data + AI Summit</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">Feb 26, 2026</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">4pm- 8pm PST</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">Data + AI Summit</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">Feb 26, 2026</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">4pm- 8pm PST</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">Data + AI Summit</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">Feb 26, 2026</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">4pm- 8pm PST</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">Data + AI Summit</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">Feb 26, 2026</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">4pm- 8pm PST</span>
+                <span class="marquee-separator">*</span>
+            </div>
+            <div class="summit-marquee-content" aria-hidden="true">
+                <span class="marquee-item">Data + AI Summit</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">Feb 26, 2026</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">4pm- 8pm PST</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">Data + AI Summit</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">Feb 26, 2026</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">4pm- 8pm PST</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">Data + AI Summit</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">Feb 26, 2026</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">4pm- 8pm PST</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">Data + AI Summit</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">Feb 26, 2026</span>
+                <span class="marquee-separator">*</span>
+                <span class="marquee-item">4pm- 8pm PST</span>
+                <span class="marquee-separator">*</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EVENT SCHEDULE SECTION -->
+<section class="event-schedule-section py-5">
+    <div class="container">
+        <div class="event-schedule-wrapper">
+            <div class="event-schedule-content">
+                <h2 class="event-schedule-title">Event Schedule</h2>
+                <p class="event-schedule-description">An invite only Data and AI leadership event focused on modern data platforms, advanced analytics, and AI driven decision making</p>
+                
+                <div class="event-schedule-list">
+                    <div class="schedule-item">
+                        <div class="schedule-time">04:00 - 04:45 PM</div>
+                        <div class="schedule-activity">Registration and Welcome Reception</div>
+                        <div class="schedule-divider"></div>
+                    </div>
+                    
+                    <div class="schedule-item">
+                        <div class="schedule-time">04:45 - 07:00 PM</div>
+                        <div class="schedule-activity">Panel Discussions, Keynotes and Presentations</div>
+                        <div class="schedule-divider"></div>
+                    </div>
+                    
+                    <div class="schedule-item">
+                        <div class="schedule-time">07:00 - 08:00 PM</div>
+                        <div class="schedule-activity">Dinner Receptions</div>
+                        <div class="schedule-divider"></div>
+                    </div>
+                </div>
+                
+                <p class="event-schedule-note">More details will be shared closer to the event.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INVITATION SECTION -->
+<section class="invitation-section py-5">
+    <div class="container">
+        <div class="invitation-wrapper">
+            <div class="row g-0">
+                <!-- Left Column - Event Invitation Image -->
+                <div class="col-lg-7 col-12 invitation-left">
+                    <div>
+                        <img src="/assets/image/img/ai-summit-form.png" alt="Data + AI Summit Invitation" class="invitation-image">
+                    </div>
+                </div>
+                
+                <!-- Right Column - Request Invitation Form -->
+                <div class="col-lg-5 col-12 invitation-right">
+                    <div class="invitation-form-wrapper">
+                        <h3 class="form-title">Request your Invitation</h3>
+                        <form [formGroup]="invitationForm" (ngSubmit)="onSubmit()" class="invitation-form">
+                            <div class="form-group">
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    [ngClass]="{'is-invalid': submitted && invitationForm.get('full_name')?.errors}"
+                                    formControlName="full_name" 
+                                    id="full_name" 
+                                    placeholder="Full Name" 
+                                    aria-label="full_name"
+                                    aria-describedby="full_name" />
+                                <div class="invalid-feedback" *ngIf="
+                                    invitationForm.get('full_name')?.errors &&
+                                    (invitationForm.get('full_name')?.dirty ||
+                                    invitationForm.get('full_name')?.touched ||
+                                    invitationForm.get('full_name')?.untouched) &&
+                                    submitted">
+                                    <p class="mb-0" *ngIf="invitationForm.get('full_name')?.errors?.['required']">
+                                        This field is required
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    [ngClass]="{'is-invalid': submitted && invitationForm.get('job_title')?.errors}"
+                                    formControlName="job_title" 
+                                    id="job_title" 
+                                    placeholder="Job Title" 
+                                    aria-label="job_title"
+                                    aria-describedby="job_title" />
+                                <div class="invalid-feedback" *ngIf="
+                                    invitationForm.get('job_title')?.errors &&
+                                    (invitationForm.get('job_title')?.dirty ||
+                                    invitationForm.get('job_title')?.touched ||
+                                    invitationForm.get('job_title')?.untouched) &&
+                                    submitted">
+                                    <p class="mb-0" *ngIf="invitationForm.get('job_title')?.errors?.['required']">
+                                        This field is required
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    [ngClass]="{'is-invalid': submitted && invitationForm.get('company_name')?.errors}"
+                                    formControlName="company_name" 
+                                    id="company_name" 
+                                    placeholder="Company Name" 
+                                    aria-label="company_name"
+                                    aria-describedby="company_name" />
+                                <div class="invalid-feedback" *ngIf="
+                                    invitationForm.get('company_name')?.errors &&
+                                    (invitationForm.get('company_name')?.dirty ||
+                                    invitationForm.get('company_name')?.touched ||
+                                    invitationForm.get('company_name')?.untouched) &&
+                                    submitted">
+                                    <p class="mb-0" *ngIf="invitationForm.get('company_name')?.errors?.['required']">
+                                        This field is required
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input 
+                                    type="email" 
+                                    class="form-control" 
+                                    [ngClass]="{'is-invalid': submitted && invitationForm.get('company_email')?.errors}"
+                                    formControlName="company_email" 
+                                    id="company_email" 
+                                    placeholder="Company Email" 
+                                    aria-label="company_email"
+                                    aria-describedby="company_email" />
+                                <div class="invalid-feedback" *ngIf="
+                                    invitationForm.get('company_email')?.errors &&
+                                    (invitationForm.get('company_email')?.dirty ||
+                                    invitationForm.get('company_email')?.touched ||
+                                    invitationForm.get('company_email')?.untouched) &&
+                                    submitted">
+                                    <p class="mb-0" *ngIf="invitationForm.get('company_email')?.errors?.['required']">
+                                        This field is required
+                                    </p>
+                                    <p class="mb-0" *ngIf="invitationForm.get('company_email')?.errors?.['pattern']">
+                                        Enter valid email
+                                    </p>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

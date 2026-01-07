@@ -1,0 +1,836 @@
+.summit-hero {
+  background-image: url(/assets/image/img/ai-summit-banner-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(81vh - 100px);
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+.summit-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.summit-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.summit-date-location {
+  margin-bottom: 1.5rem;
+}
+
+.summit-date-text {
+  color: #d048fc;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'Nexa', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.summit-title {
+  margin-bottom: 2rem;
+}
+
+.summit-main-title {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1;
+}
+
+.title-line-1 {
+  display: block;
+  color: #ffffff;
+  font-size: 4.5rem;
+  font-weight: 700;
+  font-family: 'Nexa', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.title-line-2 {
+  display: block;
+  color: #ffffff;
+  font-size: 5.5rem;
+  font-weight: 700;
+  font-family: 'Nexa', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.summit-cta {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summit-cta-wrapper {
+  display: inline-block;
+  padding: 2px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #d048fc, #0fa6fc);
+}
+
+.summit-cta-box {
+  padding: 0.75rem 2rem;
+  border-radius: 14px;
+  background: transparent;
+  backdrop-filter: none;
+}
+
+.summit-cta-text {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Nexa', sans-serif;
+  white-space: nowrap;
+}
+
+.summit-marquee-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 3;
+  background: linear-gradient(90deg, #d048fc 0%, #0fa6fc 100%);
+  padding: 0.75rem 0;
+}
+
+.summit-marquee {
+  display: flex;
+  width: fit-content;
+  animation: marquee-scroll 30s linear infinite;
+}
+
+.summit-marquee-content {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  gap: 1rem;
+}
+
+.marquee-item {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Nexa', sans-serif;
+  white-space: nowrap;
+}
+
+.marquee-separator {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: 'Nexa', sans-serif;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.event-schedule-section {
+  background-color: #e8f3ff;
+  padding: 4rem 0;
+}
+
+.event-schedule-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+.event-schedule-content {
+  width: 100%;
+  padding: 3rem 4rem;
+  margin: 0 auto;
+}
+
+.event-schedule-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000000;
+  font-family: 'Nexa', sans-serif;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.event-schedule-description {
+  font-size: 1.25rem;
+  color: #000000;
+  font-family: 'Nexa', sans-serif;
+  margin-bottom: 3rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.event-schedule-list {
+  margin-bottom: 2rem;
+}
+
+.schedule-item {
+  margin-bottom: 2rem;
+}
+
+.schedule-time {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000000;
+  font-family: 'Nexa', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.schedule-activity {
+  font-size: 20px;
+  color: #000000;
+  font-family: 'Nexa', sans-serif;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.schedule-divider {
+  height: 2px;
+  background: linear-gradient(90deg, #d048fc 0%, #0fa6fc 100%);
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.event-schedule-note {
+  font-size: 16px;
+  color: #000000;
+  font-family: 'Nexa', sans-serif;
+  text-align: right;
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+@media (max-width: 991.98px) {
+  .event-schedule-section {
+    padding: 3rem 0;
+  }
+
+  .event-schedule-content {
+    padding: 2.5rem 2rem;
+  }
+
+  .event-schedule-title {
+    font-size: 2.5rem;
+  }
+
+  .event-schedule-description {
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .schedule-time {
+    font-size: 1.1rem;
+  }
+
+  .schedule-activity {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .event-schedule-section {
+    padding: 2.5rem 0;
+  }
+
+  .event-schedule-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .event-schedule-title {
+    font-size: 2rem;
+  }
+
+  .event-schedule-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .schedule-time {
+    font-size: 1rem;
+  }
+
+  .schedule-activity {
+    font-size: 1rem;
+  }
+
+  .event-schedule-note {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .summit-hero {
+    height: calc(70vh - 100px);
+  }
+
+  .title-line-1 {
+    font-size: 3rem;
+  }
+
+  .title-line-2 {
+    font-size: 4rem;
+  }
+
+  .summit-date-text {
+    font-size: 1rem;
+  }
+
+  .summit-cta-text {
+    font-size: 0.9rem;
+  }
+
+  .summit-cta-box {
+    padding: 0.6rem 1.5rem;
+  }
+
+  .marquee-item {
+    font-size: 1.2rem;
+  }
+
+  .marquee-separator {
+    font-size: 2.2rem;
+  }
+
+  .summit-marquee-wrapper {
+    padding: 0.6rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .title-line-1 {
+    font-size: 2.5rem;
+  }
+
+  .title-line-2 {
+    font-size: 3rem;
+  }
+
+  .summit-date-text {
+    font-size: 0.9rem;
+  }
+
+  .summit-cta-text {
+    font-size: 0.85rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .summit-cta-box {
+    padding: 0.5rem 1rem;
+  }
+
+  .marquee-item {
+    font-size: 1rem;
+  }
+
+  .marquee-separator {
+    font-size: 1.8rem;
+  }
+
+  .summit-marquee-wrapper {
+    padding: 0.5rem 0;
+  }
+
+  .summit-marquee-content {
+    gap: 0.75rem;
+  }
+}
+
+.mission img {
+  z-index: 99;
+  position: relative;
+  padding: 11px 0px 9px 11px;
+  border-radius: 20px;
+}
+
+.culture-banner {
+  background-image: url(/assets/image/img/about/ourculturebanner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 3rem;
+}
+
+.our-corevalues {
+  box-shadow: 0px 0px 49.355934143066406px 0px #0029580F;
+  transition: all 3s ease-in;
+}
+
+.our-corevalues:hover {
+  background: linear-gradient(0deg, #1589FF -102.93%, #FFFFFF 155.85%);
+  transition: all 3s ease-in;
+}
+
+.our-corevalueses {
+  box-shadow: 0px 0px 49.355934143066406px 0px #0029580F;
+  transition: all 3s ease-in;
+  background: linear-gradient(0deg, #1589FF -151.93%, #FFFFFF 93.85%);
+}
+
+.our-corevaluese .card {
+  transition: all 3s ease-in;
+}
+
+.our-corevaluese {
+  box-shadow: 0px 0px 49.355934143066406px 0px #0029580F;
+  transition: all 3s ease-in;
+}
+
+.alliance-banner {
+  background-image: url(/assets/image/img/partners-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.our-service-card {
+  border: 1.5px solid #e6e9ec;
+  box-shadow: 0px 12px 10px rgba(0, 42, 56, 0.05);
+  border-radius: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.our-service-card-blue {
+  background: linear-gradient(0deg, #1589FF -76.93%, #FFFFFF 125.85%);
+  box-shadow: 0px 16px 28px rgba(0, 42, 56, 0.12);
+  border-radius: 24px;
+  transition: 0.3s ease-in-out;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.databricks {
+  width: 40%;
+}
+
+@media (max-width: 520px) {
+  .databricks {
+    width: 55%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .our-corevalueses {
+    width: 100% !important;
+  }
+
+  .about-contents {
+    top: 60% !important;
+    width: 100% !important;
+  }
+
+  .about-content {
+    top: 46% !important;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .team-block .inner-box .social-icons {
+    position: absolute;
+    right: 101px;
+    top: 100px;
+    z-index: 1;
+  }
+
+  .our-corevaluese {
+    width: 100% !important;
+  }
+
+  .our-corevaluese .card-header {
+    padding: inherit !important;
+  }
+}
+
+.invitation-section {
+  padding: 2rem 0 1rem 0;
+}
+
+.invitation-wrapper {
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.invitation-left {
+  // background: linear-gradient(180deg, #b884d8 0%, #8b4fa8 100%);
+  padding: 0;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.invitation-image-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.invitation-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.invitation-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.mahaaya-logo {
+  height: 40px;
+  width: auto;
+}
+
+.mahaaya-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Nexa', sans-serif;
+  color: #ffffff;
+}
+
+.invitation-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.title-data {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Nexa', sans-serif;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(135, 206, 250, 0.8);
+  margin: 0;
+  line-height: 1;
+}
+
+.title-plus {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+}
+
+.title-ai {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Nexa', sans-serif;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 192, 203, 0.8);
+  margin: 0;
+  line-height: 1;
+}
+
+.title-summit {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'Nexa', sans-serif;
+  color: #ffffff;
+  margin: 0 0 2rem 0;
+  line-height: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.invitation-details {
+  margin-bottom: 2rem;
+}
+
+.invitation-date-time,
+.invitation-location,
+.invitation-address {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: 'Nexa', sans-serif;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.invitation-cta-wrapper {
+  display: inline-block;
+  padding: 2px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #d048fc, #0fa6fc);
+  margin-bottom: 1.5rem;
+}
+
+.invitation-cta-box {
+  padding: 0.75rem 2rem;
+  border-radius: 14px;
+  background: transparent;
+}
+
+.invitation-cta-text {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Nexa', sans-serif;
+  white-space: nowrap;
+}
+
+.invitation-rsvp {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Nexa', sans-serif;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.invitation-highlights {
+  margin-bottom: 2rem;
+}
+
+.invitation-highlights p {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Nexa', sans-serif;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.invitation-cohosts {
+  margin-top: 2rem;
+}
+
+.cohost-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'Nexa', sans-serif;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.cohost-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cohost-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cohost-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Nexa', sans-serif;
+  color: #ffffff;
+}
+
+.cohost-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: 'Nexa', sans-serif;
+  color: #ffffff;
+}
+
+.invitation-right {
+  background: #ffffff;
+  padding: 3rem 2.5rem;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.invitation-form-wrapper {
+  width: 100%;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Nexa', sans-serif;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.invitation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Nexa', sans-serif;
+  color: #000000;
+  background: #ffffff;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    outline: none;
+    border-color: #1589ff;
+    box-shadow: 0 0 0 3px rgba(21, 137, 255, 0.1);
+  }
+
+  &::placeholder {
+    color: #999999;
+  }
+
+  &.is-invalid {
+    border-color: #dc3545;
+    
+    &:focus {
+      border-color: #dc3545;
+      box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+    }
+  }
+}
+
+.invalid-feedback {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #dc3545;
+  
+  p {
+    margin: 0;
+  }
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 0.875rem 2rem;
+  background: #1589ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Nexa', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 6px 16px 0px rgba(0, 42, 56, 0.2);
+
+  &:hover {
+    background: #0d7ae6;
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 20px 0px rgba(0, 42, 56, 0.3);
+  }
+}
+
+@media (max-width: 991.98px) {
+
+  .invitation-left {
+      min-height: auto;
+  }
+
+  .invitation-right {
+    min-height: auto;
+    padding: 2.5rem 2rem;
+  }
+
+  .title-data,
+  .title-ai {
+    font-size: 2.5rem;
+  }
+
+  .title-summit {
+    font-size: 3rem;
+  }
+
+  .invitation-wrapper {
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .invitation-section {
+    padding: 2.5rem 0;
+  }
+
+  .invitation-wrapper {
+    border-radius: 25px;
+  }
+
+  .invitation-left,
+  .invitation-right {
+    padding: 2rem 1.5rem;
+  }
+
+  .title-data,
+  .title-ai {
+    font-size: 2rem;
+  }
+
+  .title-summit {
+    font-size: 2.5rem;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+}
+
