@@ -12,8 +12,20 @@ import { APP_BASE_HREF } from '@angular/common';
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
-   const distFolder = join(process.cwd(), 'browser');
-   //const distFolder = join(process.cwd(), 'dist/browser');
+  /**
+   * IMPORTANT:
+   * When running the SSR server via `node dist/server/main.js`
+   * the compiled browser assets live in `dist/browser`.
+   *
+   * Using just `browser` here works only if the working directory
+   * is already `dist`, which is NOT the case for the default
+   * `npm run serve:ssr` script and many production deployments.
+   *
+   * To ensure deep links like `/summit` work correctly in all
+   * environments (local + production), we must always resolve
+   * the browser folder from the project root:
+   */
+  const distFolder = join(process.cwd(), 'dist/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html'))
     ? 'index.original.html'
     : 'index';

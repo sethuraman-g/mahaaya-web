@@ -1,54 +1,84 @@
 <!-- BANNER-CAROUSEL -->
 <section class="home-banners overflow-hidden">
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+  <!-- Reduced interval so carousel moves faster (from 4000ms to 2500ms) -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
 
-    <ol class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active rounded-circle"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="rounded-circle"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="rounded-circle"
-        aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"
-        class="rounded-circle"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"
-        class="rounded-circle"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" class="rounded-circle"
-        aria-label="Slide 6"></button>
-    </ol>
-
-
+      <ol class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active rounded-circle"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          class="rounded-circle"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          class="rounded-circle"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+          class="rounded-circle"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+          class="rounded-circle"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="5"
+          class="rounded-circle"
+          aria-label="Slide 6"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="6"
+          class="rounded-circle"
+          aria-label="Slide 7"
+        ></button>
+      </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/image/img/hero-summit1.png" class="d-block w-100" alt="Summit Banner">
-
+      <div class="carousel-item active" data-summit="true" (click)="navigateToSummit($event)" style="cursor: pointer;">
+        <img src="/assets/image/img/ai-summit-banner-2.png" class="d-block w-100" alt="Summit Banner">
         <div class="carousel-caption d-md-block" data-aos="fade-down" data-aos-duration="2000">
-          <div class="w-100 my-lg-5 mt-3 summit-hero-content">
-
-            <!-- <div class="summit-date-location mb-3">
-        <span class="summit-date-text">Feb 26, 2026 • Los Angeles, CA</span>
-      </div> -->
-
-            <!-- <div class="summit-title mb-3">
-        <h1 class="summit-main-title fw-bold">
-          <span class="title-line-1 d-block">Data+AI</span>
-          <span class="title-line-2 d-block">SUMMIT</span>
-        </h1>
-      </div> -->
-
-            <div class="summit-cta">
-              <div class="summit-cta-box">
-                <!-- <span class="summit-cta-text">
-            Invitation-only event for IT Leaders
-          </span> -->
+          <div class="w-100 my-lg-5 mt-3">
+            <div style="margin-bottom: 1.5rem;">
+              <span style="color: #d048fc; font-size: 1.25rem; font-weight: 600; font-family: 'Nexa', sans-serif; letter-spacing: 0.5px;">Feb 26, 2026 • Los Angeles, CA</span>
+            </div>
+            <h1 style="margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1.1; margin-bottom: 2rem;">
+              <span style="display: block; color: #ffffff; font-size: 5.5rem; font-weight: 700; font-family: 'Nexa', sans-serif; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.5rem;">Data+AI</span>
+              <span style="display: block; color: #ffffff; font-size: 5.5rem; font-weight: 700; font-family: 'Nexa', sans-serif; text-transform: uppercase; letter-spacing: 2px;">SUMMIT</span>
+            </h1>
+            <div style="margin-top: 2rem; display: flex; justify-content: center; align-items: center;">
+              <div style="display: inline-block; padding: 2px; border-radius: 16px; background: linear-gradient(135deg, #d048fc, #0fa6fc);">
+                <div style="padding: 0.75rem 2rem; border-radius: 14px; background: transparent;">
+                  <span style="color: #ffffff; font-size: 1rem; font-weight: 500; font-family: 'Nexa', sans-serif; white-space: nowrap;">Invitation-Only event for IT Leaders</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://d3hnagtjo0sr6w.cloudfront.net/assets/image/img/Home banner0.png" class="d-block w-100"
-          alt="...">
+        <img src="https://d3hnagtjo0sr6w.cloudfront.net/assets/image/img/Home banner0.png" class="d-block w-100" alt="..." loading="lazy" decoding="async">
         <div class="carousel-caption d-md-block" data-aos="fade-down" data-aos-duration="2000">
           <div class="w-100 my-lg-5 mt-3">
             <h5 class="ff-primary banner-head fs-3xl fw-bold mb-3 theme-secondary">
@@ -58,11 +88,8 @@
           </div>
         </div>
       </div>
-
-
       <div class="carousel-item">
-        <img src="https://d3hnagtjo0sr6w.cloudfront.net/assets/image/img/homeBannerNew.png" class="d-block w-100"
-          alt="...">
+        <img src="https://d3hnagtjo0sr6w.cloudfront.net/assets/image/img/homeBannerNew.png" class="d-block w-100" alt="..." loading="lazy" decoding="async">
         <div class="carousel-caption d-md-block">
           <div class="w-100 my-lg-5 mt-3">
             <h5 class="ff-primary banner-head fs-3xl fw-bold mb-3 theme-secondary">
@@ -73,48 +100,51 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://d3hnagtjo0sr6w.cloudfront.net/assets/image/img/Homebanner2.png" class="d-block w-100"
-          alt="...">
+        <img src="https://d3hnagtjo0sr6w.cloudfront.net/assets/image/img/Homebanner2.png" class="d-block w-100" alt="..." loading="lazy" decoding="async">
         <div class="carousel-caption d-md-block">
           <div class="w-100 my-lg-5 mt-3">
-            <h5 class="ff-primary banner-head fs-3xl fw-bold mb-3 theme-secondary">Unleashing innovation by blending
-              technology and data </h5>
-          </div>
+       <h5  class="ff-primary banner-head fs-3xl fw-bold mb-3 theme-secondary">Unleashing innovation by blending technology and data </h5>
+        </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://d3hnagtjo0sr6w.cloudfront.net/assets/image/img/Homebanner3.png" class="d-block w-100"
-          alt="...">
+        <img src="https://d3hnagtjo0sr6w.cloudfront.net/assets/image/img/Homebanner3.png" class="d-block w-100" alt="..." loading="lazy" decoding="async">
         <div class="carousel-caption d-md-block">
           <div class="w-100 my-lg-5 mt-3">
-            <h5 class="ff-primary banner-head fs-3xl fw-bold mb-3 theme-secondary">Weaving a dynamic fabric of
-              interconnected data
-            </h5>
-          </div>
+         <h5  class="ff-primary banner-head fs-3xl fw-bold mb-3 theme-secondary">Weaving a dynamic fabric of interconnected data
+</h5>
+        </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://d3hnagtjo0sr6w.cloudfront.net/assets/image/img/homebanner4.png" class="d-block w-100"
-          alt="...">
+        <img src="https://d3hnagtjo0sr6w.cloudfront.net/assets/image/img/homebanner4.png" class="d-block w-100" alt="..." loading="lazy" decoding="async">
         <div class="carousel-caption d-md-block">
           <div class="w-100 my-lg-5 mt-3">
-            <h5 class="ff-primary banner-head fs-3xl fw-bold mb-3 theme-secondary">Turning data into insights
-            </h5>
-          </div>
+         <h5  class="ff-primary banner-head fs-3xl fw-bold mb-3 theme-secondary">Turning data into insights
+</h5>
+        </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://d3hnagtjo0sr6w.cloudfront.net/assets/image/img/homebanner5.png" class="d-block w-100"
-          alt="...">
+        <img src="https://d3hnagtjo0sr6w.cloudfront.net/assets/image/img/homebanner5.png" class="d-block w-100" alt="..." loading="lazy" decoding="async">
         <div class="carousel-caption d-md-block">
           <div class="w-100 my-lg-5 mt-3">
-            <h5 class="ff-primary banner-head fs-3xl fw-bold mb-3 theme-secondary">Where digital transformation,
-              analytics modernization, and AI converge to shape a smarter, more agile tomorrow.
-            </h5>
-          </div>
+         <h5  class="ff-primary banner-head fs-3xl fw-bold mb-3 theme-secondary">Where digital transformation, analytics modernization, and AI converge to shape a smarter, more agile tomorrow.
+</h5>
+        </div>
         </div>
       </div>
     </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
 
   </div>
 </section>
@@ -126,71 +156,81 @@
       <div class="row primary-alliance custom-nav position-relative">
         <h5 class="ff-primary fs-1xl fw-bold head-theme mb-4">Our Primary Alliance</h5>
         <owl-carousel-o [options]="clientOptionstwo">
-          <ng-container>
-            <ng-template carouselSlide>
-              <div class="d-flex mt-lg-2 pb-lg-4">
-                <a href="#" class="ms-3">
-                  <img src="/assets/icon/clients/microsoft-logo.svg" alt="Mahaaya | partner microsoft"
-                    class="img img-fluid" />
-                </a>
+            <ng-container>
+              <ng-template carouselSlide>
+                <div class="d-flex mt-lg-2 pb-lg-4">
+                  <a href="#" class="ms-3">
+                    <img
+                    src="/assets/icon/clients/microsoft-logo.svg"
+                    alt="Mahaaya | partner microsoft"
+                    class="img img-fluid"
+                  />
+                  </a>
 
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-sm-12" data-aos="fade-left" data-aos-duration="3000">
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-sm-12" data-aos="fade-left" data-aos-duration="3000">
 
                   <div class="mt-4">
-                    <img src="/assets/icon/clients/microsoftbanner.png" alt="Mahaaya | team alias and partners "
-                      class="rounded-4 conversation img img-fluid thump-team" />
+                    <img
+                      src="/assets/icon/clients/microsoftbanner.png"
+                      alt="Mahaaya | team alias and partners "
+                      class="rounded-4 conversation img img-fluid thump-team"
+                    />
                   </div>
                 </div>
                 <div class=" col-lg-6 col-sm-12" data-aos="fade-right" data-aos-duration="2000">
-                  <div class="my-auto">
-                    <p class="fw-semibold fs-lg  head-theme ff-primary my-5 alliance">
-                      As a solutions partner for Microsoft, we offer clients a compelling combination of IP solutions,
-                      abundant knowledge and resources. This powerful alliance aims to support organizations in
-                      achieving
-                      their business objectives and remaining competitive in today’s fast-paced market.</p>
+                <div class="my-auto">
+                   <p class="fw-semibold fs-lg  head-theme ff-primary my-5 alliance">
+                    As a solutions partner for Microsoft, we offer clients a compelling combination of IP solutions,
+                    abundant knowledge and resources. This powerful alliance aims to support organizations in achieving
+                    their business objectives and remaining competitive in today’s fast-paced market.</p>
                     <div class="d-flex justify-content-center">
-                      <img src="/assets/icon/clients/ms-fabric-featured-partner.png" alt="Fabric Featured Partner"
-                        class="img img-fluid fabric-image" />
+                      <img
+                      src="/assets/icon/clients/ms-fabric-featured-partner.png"
+                      alt="Fabric Featured Partner"
+                      class="img img-fluid fabric-image"
+                      />
                     </div>
-                  </div>
+                </div>
 
 
                 </div>
-              </div>
-            </ng-template>
-            <ng-template carouselSlide>
-              <div class="d-flex mt-lg-2 pb-lg-2">
-                <a href="#" class="ms-3">
-                  <img src="/assets/icon/clients/databricks.svg" alt="Mahaaya | partner microsoft"
-                    class="img img-fluid" />
-                </a>
+                </div>
+              </ng-template>
+              <ng-template carouselSlide>
+                <div class="d-flex mt-lg-2 pb-lg-2">
+                  <a href="#" class="ms-3">
+                    <img
+                    src="/assets/icon/clients/databricks.svg"
+                    alt="Mahaaya | partner microsoft"
+                    class="img img-fluid"
+                  />
+                  </a>
 
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-sm-12" data-aos="fade-left" data-aos-duration="3000">
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-sm-12" data-aos="fade-left" data-aos-duration="3000">
 
                   <div class="mt-4">
-                    <img src="/assets/icon/clients/databricksbanner.png" alt="Mahaaya | team alias and partners "
-                      class="rounded-4 conversation img img-fluid thump-team" />
+                    <img
+                      src="/assets/icon/clients/databricksbanner.png"
+                      alt="Mahaaya | team alias and partners "
+                      class="rounded-4 conversation img img-fluid thump-team"
+                    />
                   </div>
                 </div>
                 <div class=" col-lg-6 col-sm-12" data-aos="fade-right" data-aos-duration="2000">
-                  <div class="my-auto">
-                    <p class="fw-semibold fs-lg  head-theme ff-primary mt-5 alliance">
-                      As a partner of Databricks, we bring our clients the power of a unified data analytics platform
-                      combined with deep technical expertise and proven delivery experience. This collaboration enables
-                      us to help organizations simplify data management, accelerate analytics, and operationalize AI
-                      across their business.</p>
-                    <p class="fw-semibold fs-lg  head-theme ff-primary alliance">
-                      Together with Databricks, we empower enterprises to unlock the full potential of their data,
-                      driving innovation and delivering real, measurable outcomes in today’s data-driven world.</p>
-                  </div>
+                <div class="my-auto">
+                   <p class="fw-semibold fs-lg  head-theme ff-primary mt-5 alliance">
+                    As a partner of Databricks, we bring our clients the power of a unified data analytics platform combined with deep technical expertise and proven delivery experience. This collaboration enables us to help organizations simplify data management, accelerate analytics, and operationalize AI across their business.</p>
+                   <p class="fw-semibold fs-lg  head-theme ff-primary alliance">
+                     Together with Databricks, we empower enterprises to unlock the full potential of their data, driving innovation and delivering real, measurable outcomes in today’s data-driven world.</p>
                 </div>
-              </div>
-            </ng-template>
-          </ng-container>
+                </div>
+                </div>
+              </ng-template>
+            </ng-container>
         </owl-carousel-o>
 
       </div>
@@ -211,17 +251,17 @@
         </div>
         <div class="col">
           <div class="custom-alians-card text-center even-child-bg" data-aos="flip-right" data-aos-duration="1000">
-            <img src="/assets/icon/alians/denondo-logo.svg" alt="Mahaaya | allias partners" class="img img-fluid ">
+            <img src="/assets/icon/alians/denondo-logo.svg" alt="Mahaaya | allias partners"  class="img img-fluid ">
           </div>
         </div>
         <div class="col">
           <div class="custom-alians-card text-center" data-aos="flip-right" data-aos-duration="1500">
-            <img src="/assets/icon/alians/data-dog-logo.svg" alt="Mahaaya | allias partners" class="img img-fluid">
+            <img src="/assets/icon/alians/data-dog-logo.svg" alt="Mahaaya | allias partners"  class="img img-fluid">
           </div>
         </div>
         <div class="col">
           <div class="custom-alians-card text-center even-child-bg" data-aos="flip-right" data-aos-duration="2000">
-            <img src="/assets/icon/alians/collibra-logo.svg" alt="Mahaaya | allias partners" class="img img-fluid">
+            <img src="/assets/icon/alians/collibra-logo.svg" alt="Mahaaya | allias partners"  class="img img-fluid">
           </div>
         </div>
         <div class="col">
@@ -257,8 +297,11 @@
           <div class="col-lg-4">
             <div class="card text-center w-100 h-100 border-0 service-card" (click)="navigateToElement('da-strategy')">
               <div class="card-header pt-4 svg-img service-info border-0">
-                <img src="/assets/icon/capabilities/architectstrategy.svg"
-                  alt="Mahaaya | data and Architecture Strategy " class="img img-fluid" />
+                <img
+                  src="/assets/icon/capabilities/architectstrategy.svg"
+                  alt="Mahaaya | data and Architecture Strategy "
+                  class="img img-fluid"
+                />
               </div>
               <div class="card-body px-4 py-1 service-info">
                 <div class="card-tittle">
@@ -271,8 +314,11 @@
           <div class="col-lg-4">
             <div class="card text-center w-100 h-100 border-0 service-card" (click)="navigateToElement('dt-strategy')">
               <div class="card-header pt-4 svg-img service-info border-0">
-                <img src="/assets/icon/capabilities/tranformationstrategy.svg" alt="Mahaaya | Digital Transformation "
-                  class="img img-fluid" />
+                <img
+                  src="/assets/icon/capabilities/tranformationstrategy.svg"
+                  alt="Mahaaya | Digital Transformation "
+                  class="img img-fluid"
+                />
               </div>
               <div class="card-body px-4 py-1 service-info">
                 <div class="card-tittle">
@@ -285,8 +331,11 @@
           <div class="col-lg-4">
             <div class="card text-center w-100 h-100 border-0 service-card" (click)="navigateToElement('ca-strategy')">
               <div class="card-header pt-4 svg-img service-info border-0">
-                <img src="/assets/icon/capabilities/optimizationstrategy.svg" alt="Mahaaya | cloud Optimization"
-                  class="img img-fluid" />
+                <img
+                  src="/assets/icon/capabilities/optimizationstrategy.svg"
+                  alt="Mahaaya | cloud Optimization"
+                  class="img img-fluid"
+                />
               </div>
               <div class="card-body px-4 py-2 service-info">
                 <div class="card-tittle">
@@ -306,8 +355,11 @@
           <div class="col-lg-4">
             <div class="card text-center w-100 h-100 border-0 service-card" (click)="navigateToElement('c-modernize')">
               <div class="card-header pt-4 svg-img service-info border-0">
-                <img src="/assets/icon/capabilities/cloudmodernization.svg" alt="Mahaaya | cloud Modernization"
-                  class="img img-fluid" />
+                <img
+                  src="/assets/icon/capabilities/cloudmodernization.svg"
+                  alt="Mahaaya | cloud Modernization"
+                  class="img img-fluid"
+                />
               </div>
               <div class="card-body px-4 py-1 service-info">
                 <div class="card-tittle">
@@ -320,8 +372,11 @@
           <div class="col-lg-4">
             <div class="card text-center w-100 h-100 border-0 service-card" (click)="navigateToElement('data-vishual')">
               <div class="card-header pt-4 svg-img service-info border-0">
-                <img src="/assets/icon/capabilities/visualization.svg" alt="Mahaaya | data Engineering & Visualization"
-                  class="img img-fluid" />
+                <img
+                  src="/assets/icon/capabilities/visualization.svg"
+                  alt="Mahaaya | data Engineering & Visualization"
+                  class="img img-fluid"
+                />
               </div>
               <div class="card-body px-4 py-1 service-info">
                 <div class="card-tittle">
@@ -332,11 +387,13 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card text-center w-100 h-100 border-0 service-card"
-              (click)="navigateToElement('analytic-modern')">
+            <div class="card text-center w-100 h-100 border-0 service-card" (click)="navigateToElement('analytic-modern')">
               <div class="card-header pt-4 svg-img service-info border-0">
-                <img src="/assets/icon/capabilities/analyticsmodernization.svg" alt="Mahaaya | analytics-modernize"
-                  class="img img-fluid" />
+                <img
+                  src="/assets/icon/capabilities/analyticsmodernization.svg"
+                  alt="Mahaaya | analytics-modernize"
+                  class="img img-fluid"
+                />
               </div>
               <div class="card-body px-4 py-1 service-info">
                 <div class="card-tittle">
@@ -347,11 +404,13 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card text-center w-100 h-100 border-0 service-card"
-              (click)="navigateToElement('data-governance')">
+            <div class="card text-center w-100 h-100 border-0 service-card" (click)="navigateToElement('data-governance')">
               <div class="card-header pt-4 svg-img service-info border-0">
-                <img src="/assets/icon/capabilities/datagovernance.svg" alt="Mahaaya | data Governance"
-                  class="img img-fluid" />
+                <img
+                  src="/assets/icon/capabilities/datagovernance.svg"
+                  alt="Mahaaya | data Governance"
+                  class="img img-fluid"
+                />
               </div>
               <div class="card-body px-4 py-1 service-info">
                 <div class="card-tittle">
@@ -363,11 +422,13 @@
           </div>
 
           <div class="col-lg-4">
-            <div class="card text-center w-100 h-100 border-0 service-card"
-              [routerLink]="'/solutionmarketplace/aiSolutions'">
+            <div class="card text-center w-100 h-100 border-0 service-card" [routerLink]="'/solutionmarketplace/aiSolutions'">
               <div class="card-header pt-4 svg-img service-info border-0">
-                <img src="/assets/icon/capabilities/artificial-intelligence 1.svg"
-                  alt="Mahaaya | Ai & Cognitive services" class="img img-fluid" />
+                <img
+                  src="/assets/icon/capabilities/artificial-intelligence 1.svg"
+                  alt="Mahaaya | Ai & Cognitive services"
+                  class="img img-fluid"
+                />
               </div>
               <div class="card-body px-4 py-1 service-info">
                 <div class="card-tittle">
@@ -378,11 +439,13 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card text-center w-100 h-100 border-0 service-card"
-              (click)="navigateToElement('secure-compile')">
+            <div class="card text-center w-100 h-100 border-0 service-card" (click)="navigateToElement('secure-compile')">
               <div class="card-header pt-4 svg-img service-info border-0">
-                <img src="/assets/icon/capabilities/security.svg" alt="Mahaaya | security and compailence"
-                  class="img img-fluid" />
+                <img
+                  src="/assets/icon/capabilities/security.svg"
+                  alt="Mahaaya | security and compailence"
+                  class="img img-fluid"
+                />
               </div>
               <div class="card-body px-4 py-1 service-info">
                 <div class="card-tittle">
@@ -407,12 +470,13 @@
   <div class="marquee-wrapper">
     <div class="marquee-content">
       <!-- <ng-container> -->
-      <div *ngFor="let data of aiCapablitiesData">
-        <div class="ai-data d-flex flex-column gap-2 justify-content-center py-3">
-          <img [src]="data.icon" alt="Mahaaya | AI Capabilities" class="img-fluid" style="height: 50px; width: 50px;" />
-          <p class="head-theme fs-lg fw-semibold mb-0">{{ data.title }}</p>
+        <div *ngFor="let data of aiCapablitiesData">
+          <div class="ai-data d-flex flex-column gap-2 justify-content-center py-3">
+            <img [src]="data.icon" alt="Mahaaya | AI Capabilities" class="img-fluid"
+              style="height: 50px; width: 50px;" />
+            <p class="head-theme fs-lg fw-semibold mb-0">{{ data.title }}</p>
+          </div>
         </div>
-      </div>
       <!-- </ng-container> -->
     </div>
   </div>
@@ -421,7 +485,9 @@
 
 <!-- MAHAAYA-ACCELERATORS -->
 <div class="container py-5" data-aos="zoom-in" data-aos-duration="3000">
-  <h6 class="text-center fw-bb fs-1xl head-theme pb-5 mt-0 mb-5">
+  <h6
+    class="text-center fw-bb fs-1xl head-theme pb-5 mt-0 mb-5"
+  >
     Mahaaya Accelerators
   </h6>
   <div class="row g-5 pb-5 my-5">
@@ -429,14 +495,23 @@
     <div class="col-lg-6 d-flex justify-content-center align-items-center">
       <div class="circle-wrapper mb-5">
         <!-- Circle Tabs -->
-        <div *ngFor="let tab of tabs; let i = index" class="circle-tab" [class.active]="i === activeIndex"
-          [style.transform]="getTabTransform(i)" (click)="setActive(i)">
+        <div
+          *ngFor="let tab of tabs; let i = index"
+          class="circle-tab"
+          [class.active]="i === activeIndex"
+          [style.transform]="getTabTransform(i)"
+          (click)="setActive(i)"
+        >
           <span>{{ tab.label }}</span>
         </div>
 
         <!-- Center Image -->
         <div class="circle-center">
-          <img src="/assets/image/img/aiMahaaya.png" alt="Mahaaya" class="img-fluid" />
+          <img
+            src="/assets/image/img/aiMahaaya.png"
+            alt="Mahaaya"
+            class="img-fluid"
+          />
         </div>
       </div>
     </div>
@@ -457,7 +532,12 @@
   <div class="row g-4">
     <div class="col-lg-4 col-md-6" *ngFor="let data of serviceOfferingsData">
       <div class="text-center service-offering-card">
-        <img [src]="data.icon" [alt]="data.title" class="img img-fluid mb-2" style="height: 60px; width: 60px;" />
+        <img
+          [src]="data.icon"
+          [alt]="data.title"
+          class="img img-fluid mb-2"
+          style="height: 60px; width: 60px;"
+        />
         <p class="fw-semibold fs-md mb-0">
           {{ data.title }}
         </p>
@@ -468,217 +548,217 @@
 
 <!-- OUR-CLIENTS -->
 <section class="bg-highlight-primary py-5 overflow-hidden" [routerLink]="'/customer'">
-  <div class="container">
-    <h5 class="text-center ff-primary theme-secondary fw-semibold fs-1xl">Our Clients</h5>
-  </div>
-  <div class="Mahaya-clients mb-3">
-    <div class=" pt-5">
-      <owl-carousel-o [options]="clientOptions">
-        <ng-container>
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/acumidata.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+ <div class="container">
+  <h5 class="text-center ff-primary theme-secondary fw-semibold fs-1xl">Our Clients</h5>
+ </div>
+    <div class="Mahaya-clients mb-3">
+      <div class=" pt-5">
+           <owl-carousel-o [options]="clientOptions">
+            <ng-container>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/acumidata.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/bank_of_hope.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/bank_of_hope.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/bfi-solution.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/bfi-solution.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/nuskin.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/nuskin.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/con-met.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/con-met.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/consolitated-fire.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/consolitated-fire.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/danaher.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
-          <!-- <ng-template carouselSlide>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/danaher.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
+              <!-- <ng-template carouselSlide>
                 <div class="carousel-logo d-flex flex-column justify-content-center h-100">
                   <img src="/assets/icon/partners/Ej-walley.svg" alt="Mahaaya | allias partners" class="img-fluid"
                     style="height: 100px; width: 75%;" />
                 </div>
               </ng-template> -->
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/experian.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/experian.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/ingram.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/ingram.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/legal-connect.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/legal-connect.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/legalzoom.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/legalzoom.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/lower-pills.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/lower-pills.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/ms-national.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/ms-national.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/perceptyx.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/perceptyx.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/phenoomenex.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
-          <!-- <ng-template carouselSlide>
+              <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/phenoomenex.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
+              <!-- <ng-template carouselSlide>
                 <div class="carousel-logo d-flex flex-column justify-content-center h-100">
                   <img src="/assets/icon/partners/point-72.svg" alt="Mahaaya | allias partners" class="img-fluid"
                     style="height: 100px; width: 75%;" />
                 </div>
               </ng-template> -->
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/prc.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+               <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/prc.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/prima-health.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+               <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/prima-health.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/quidel.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+               <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/quidel.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/reflexis.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+               <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/reflexis.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/relar.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
-          <!-- <ng-template carouselSlide>
+               <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/relar.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
+               <!-- <ng-template carouselSlide>
                 <div class="carousel-logo d-flex flex-column justify-content-center h-100">
                   <img src="/assets/icon/partners/shure.svg" alt="Mahaaya | allias partners" class="img-fluid"
                     style="height: 100px; width: 75%;" />
                 </div>
               </ng-template> -->
-          <!-- <ng-template carouselSlide>
+               <!-- <ng-template carouselSlide>
                 <div class="carousel-logo d-flex flex-column justify-content-center h-100">
                   <img src="/assets/icon/partners/summons.svg" alt="Mahaaya | allias partners" class="img-fluid"
                     style="height: 100px; width: 75%;" />
                 </div>
               </ng-template> -->
-          <!-- <ng-template carouselSlide>
+               <!-- <ng-template carouselSlide>
                 <div class="carousel-logo d-flex flex-column justify-content-center h-100">
                   <img src="/assets/icon/partners/tetrapak.svg" alt="Mahaaya | allias partners" class="img-fluid"
                     style="height: 100px; width: 75%;" />
                 </div>
               </ng-template> -->
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/vms-finance.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/west-bank.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/west-cost.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/west-field.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="carousel-logo d-flex flex-column justify-content-center h-100">
-              <img src="/assets/icon/partners/american-clg.svg" alt="Mahaaya | allias partners" class="img-fluid"
-                style="height: 100px; width: 75%;" />
-            </div>
-          </ng-template>
+               <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/vms-finance.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
+               <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/west-bank.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
+               <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/west-cost.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
+               <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/west-field.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
+               <ng-template carouselSlide>
+                <div class="carousel-logo d-flex flex-column justify-content-center h-100">
+                  <img src="/assets/icon/partners/american-clg.svg" alt="Mahaaya | allias partners" class="img-fluid"
+                    style="height: 100px; width: 75%;" />
+                </div>
+              </ng-template>
 
 
-        </ng-container>
-      </owl-carousel-o>
+            </ng-container>
+          </owl-carousel-o>
 
+      </div>
     </div>
-  </div>
 </section>
 
 <!-- LET'S-CONNECT -->
@@ -696,3 +776,4 @@
     </div>
   </div>
 </section>
+

@@ -174,4 +174,15 @@ export class HomeComponent {
 
   return `translate(${x}px, ${y}px)`;
 }
+
+  navigateToSummit(event: Event) {
+    // Prevent navigation if clicking on carousel controls
+    const target = event.target as HTMLElement;
+    if (target.closest('.carousel-control-prev') || 
+        target.closest('.carousel-control-next') || 
+        target.closest('.carousel-indicators')) {
+      return;
+    }
+    this.router.navigate(['/summit']);
+  }
 }

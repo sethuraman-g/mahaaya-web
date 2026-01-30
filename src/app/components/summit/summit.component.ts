@@ -14,6 +14,24 @@ export class SummitComponent implements OnDestroy {
   invitationForm!: FormGroup;
   private unSubscribe$ = new Subject();
 
+  speakers = [
+    {
+      name: 'Mukash Krishnan',
+      description: 'A successful entrepreneur with a visionary approach to new business models and digital strategies.',
+      image: '/assets/image/img/about/AI-event-speaker.png'
+    },
+    {
+      name: 'Mukash Krishnan',
+      description: 'A successful entrepreneur with a visionary approach to new business models and digital strategies.',
+      image: '/assets/image/img/about/AI-event-speaker.png'
+    },
+    {
+      name: 'Mukash Krishnan',
+      description: 'A successful entrepreneur with a visionary approach to new business models and digital strategies.',
+      image: '/assets/image/img/about/AI-event-speaker.png'
+    }
+  ];
+
   constructor(
     private fb: FormBuilder,
     private apiservice: ApiService
